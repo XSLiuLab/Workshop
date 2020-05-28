@@ -1,3 +1,4 @@
+library(tidyverse)
 
 # Read and save data in base R --------------------------------------------
 
@@ -291,4 +292,219 @@ intersect(
   c("a", "b"),
   c("b", "c")
 )
+
+x <- data.frame(
+  x1 = 1,
+  y2 = 2,
+  x3 = 3,
+  y1 = "string",
+  x2 = 3,
+  y3 = TRUE
+)
+x
+
+x %>% select_if(is.numeric)
+x %>% select_if(is.logical)
+# x %>% select_if(is.character)
+x %>% select_all()
+
+x = data.frame(
+  name = paste0("gene", 1:10),
+  gene1 = 1:100,
+  gene2 = 100:199
+)
+
+x
+
+#x %>% tibble::column_to_rownames("name")
+x %>% 
+  select_if(is.numeric) %>% 
+  mutate_all(~ . - mean(.)) -> x2
+
+f <- function(x) {
+  x - mean(x) 
+}
+
+x %>% 
+  select_if(is.numeric) %>% 
+  mutate_all(f) -> x3
+
+identical(x2, x3)
+
+head(mtcars)
+select_all(mtcars, function(x) paste0(x, "_yes"))
+select_all(mtcars, ~paste0(., "_yes"))
+
+# Custom
+filter(mtcars, carb > 2)
+filter_at(mtcars, vars(gear, carb), all_vars(. == 4))
+# Some
+# 行满足的条件是：
+## 以 d 开头的变量中任意存在一个为 偶数 就返回
+filter_at(mtcars, vars(starts_with("d")), any_vars((. %% 2) == 0))
+# ALL
+filter_all(mtcars, all_vars(. > 0))
+
+
+mtcars %>% 
+  group_by(carb) %>% 
+  tidyr::nest() -> z
+
+mtcars %>% 
+  group_by(carb) %>% 
+  summarize_all(sum) -> z2
+
+z
+z$data[[1]]$mpg %>% sum
+
+z2$mpg[[4]]
+
+
+substr("ABCDE", 2, 4)
+substring("ABCDE", 2)
+
+# sub()
+# gsub()
+# grep()
+# grepl()
+
+
+
+# Tidyr -------------------------------------------------------------------
+
+x = tibble(a = 1, b = 2)
+class(x)
+
+inherits(x, "data.frame")
+is.data.frame(x)
+
+tribble(
+  ~x, ~y,
+  1, 2,
+  3, 4
+)
+
+x = c(1, 2)
+names(x) = c("a", "b")
+x
+enframe(x)
+
+
+x = list(
+  a = 1,
+  b = c(2, 3)
+)
+
+x
+enframe(x)
+
+data.frame() %>% 
+  as_tibble()
+
+df <- data.frame(Month = 1:12, Year = c(2000, rep(NA, 11)))
+df
+df %>% fill(Year)
+
+df %>% drop_na()
+df %>% replace_na(list(Year = 1))
+
+pivot_longer()
+pivot_wider()
+
+relig_income %>% glimpse()
+relig_income %>%
+  pivot_longer(-religion, names_to = "income", values_to = "count") -> data_long
+
+ggplot(data_long, aes(x = religion, y = count, color = income)) +
+  geom_point()
+
+?pivot_wider
+
+fish_encounters
+fish_encounters %>%
+  pivot_wider(names_from = station, values_from = seen, values_fill = list(seen = 100))
+
+expand(mtcars, vs, cyl)
+# grid search
+
+df <- data.frame(x = c(NA, "a.b.c", "a.d.c", "b.c.x"))
+df
+df %>% separate(x, c("A", "B", "C"), sep = "\\.") -> df2
+
+df2 %>% unite(col = "C", A, B, C, sep = ",")
+
+df <- data.frame(
+  x = 1:3,
+  y = c("a", "d,e,f", "g,h"),
+  z = c("1", "2,3,4", "5,6"),
+  stringsAsFactors = FALSE
+)
+
+df %>% separate_rows(y, z)
+
+
+# Write -------------------------------------------------------------------
+
+readr::write_csv()
+readr::write_tsv()
+
+
+# data.table --------------------------------------------------------------
+library(data.table)
+
+fread()
+fwrite()
+
+DF = data.frame(x=rep(c("b","a","c"),each=3), y=c(1,3,6), v=1:9)
+DF
+
+DF %>% as.data.table()
+
+mtcars[rep(1:32, 20), ]
+mtcars[rep(1:32, 20), ] %>% as.data.table()
+
+# DT[ i,  j,  by ] # + extra arguments
+# |   |   |
+#   |   |    -------> grouped by what?
+#   |    -------> what to do?
+#   ---> on which rows?
+
+#setDT()
+
+DT = DF %>% as.data.table()
+# data.table
+DT[x == "b" & y == 1]
+# data.frame
+DF[DF$x == "b" & DF$y == 1 , ]
+# dplyr
+DF %>% filter(x == "b", y == 1)
+
+DT[x == "b", c("y", "v")]
+DT[x == "b", list(y, v)]
+DT[x == "b", c(2, 3)]
+DT[x == "b", c(FALSE, TRUE, TRUE)]
+
+## Update
+DT[x == "b", c("y", "v") := 1]
+DT[x == "b", `:=`(
+  y = 100,
+  v = 100
+)]
+## 上述两个操作效果是一样的，
+## 我视频中将 v 写成了 z 所以不一样
+DT
+
+setDT(DF)
+DF
+
+DF[, list(y_sum = sum(y)), by = x]
+DF[, .(y_sum = sum(y)), by = x]
+
+# i, j, by
+DF[x %in% c("a", "b"), .(y_sum = sum(y)), by = x]
+DF[x %in% c("a", "b"), .(y_sum = sum(y),
+                         v_sum = sum(v)), by = x]
+
+DF[x %in% c("a", "b"), .(y_sum = paste(y, collapse = ",")), by = x]
+
 
