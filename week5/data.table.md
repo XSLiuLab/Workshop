@@ -1,5 +1,7 @@
 # data.table
 
+- [查看代码](showcase.R)
+
 data.table的基本框架
 
 <img src="data.table.assets/Screen Shot 2020-06-17 at 07.43.34.png" alt="Screen Shot 2020-06-17 at 07.43.34" style="zoom:45%;" />
