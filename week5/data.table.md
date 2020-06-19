@@ -2,7 +2,7 @@
 
 data.table的基本框架
 
-<img src="../../../../Desktop/Screen Shot 2020-06-17 at 07.43.34.png" alt="Screen Shot 2020-06-17 at 07.43.34" style="zoom:45%;" />
+<img src="data.table.assets/Screen Shot 2020-06-17 at 07.43.34.png" alt="Screen Shot 2020-06-17 at 07.43.34" style="zoom:45%;" />
 
 
 
@@ -564,7 +564,7 @@ data.table的基本框架
 
 - 按相同的列内容进行data.table组合
 
-  <img src="../../../../Desktop/Screen Shot 2020-06-17 at 12.45.04.png" alt="Screen Shot 2020-06-17 at 12.45.04" style="zoom:50%;" />
+  <img src="data.table.assets/Screen Shot 2020-06-17 at 12.45.04.png" alt="Screen Shot 2020-06-17 at 12.45.04" style="zoom:50%;" />
 
 ```R
 > dt_a <- data.table(a = 1:3, 
@@ -590,7 +590,7 @@ data.table的基本框架
 
 条件选择组合
 
-<img src="../../../../Desktop/Screen Shot 2020-06-17 at 13.21.56.png" alt="Screen Shot 2020-06-17 at 13.21.56" style="zoom:50%;" />
+<img src="data.table.assets/Screen Shot 2020-06-17 at 13.21.56.png" alt="Screen Shot 2020-06-17 at 13.21.56" style="zoom:50%;" />
 
 ```R
 > dt_a[dt_b, on = .(b = y)]
@@ -609,7 +609,7 @@ data.table的基本框架
 
   - `rbind()`
 
-    <img src="../../../../Desktop/Screen Shot 2020-06-17 at 13.27.05.png" alt="Screen Shot 2020-06-17 at 13.27.05" style="zoom:50%;" />
+    <img src="data.table.assets/Screen Shot 2020-06-17 at 13.27.05.png" alt="Screen Shot 2020-06-17 at 13.27.05" style="zoom:50%;" />
 
   ```R
   > dt_a
@@ -634,7 +634,7 @@ data.table的基本框架
 
   - `cbind()`
 
-<img src="../../../../Desktop/Screen Shot 2020-06-17 at 13.27.44.png" alt="Screen Shot 2020-06-17 at 13.27.44" style="zoom:50%;" />
+<img src="data.table.assets/Screen Shot 2020-06-17 at 13.27.44.png" alt="Screen Shot 2020-06-17 at 13.27.44" style="zoom:50%;" />
 
 
 
