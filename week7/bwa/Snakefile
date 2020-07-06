@@ -1,0 +1,12 @@
+configfile: "samples.yaml"
+
+rule bwa:
+    input:
+        fa = "fastq/genome.fa",
+        fastq = expand("fastq/{sample}.fastq", sample=config["samples"])
+    output: 
+        temp("bam/test.bam")
+    params:
+        samtools="view -Sb"
+    shell: 
+        "bwa mem {input.fa} {input.fastq} | samtools {params.samtools} -> {output}"
