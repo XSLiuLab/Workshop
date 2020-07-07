@@ -1,0 +1,28 @@
+import os
+
+rule all:
+    input:
+        "out.txt"
+rule test:
+    input:
+        "test.py" 
+    output: 
+        "out.py"
+    params:
+        cat="-n"
+    shell:
+        "cat {params.cat} {input} > {output}"
+rule test2:
+    input:
+        rules.test.output
+    output: 
+        "out.txt"
+    params:
+        cat="-n"
+
+        
+
+
+
+
+    

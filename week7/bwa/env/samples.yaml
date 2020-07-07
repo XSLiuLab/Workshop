@@ -1,0 +1,3 @@
+samples:
+    A: fastq/A.fastq
+    B: fastq/B.fastq
