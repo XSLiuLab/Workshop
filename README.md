@@ -13,7 +13,7 @@
 - [第五期：使用 data.table 操作数据](week5/data.table.md)（[视频](https://www.bilibili.com/video/BV1wv411B7gh)）-（陶紫玉）
 - [第六期：R 包开发](week6/第六期.md)（[视频](https://www.bilibili.com/video/BV1ST4y1J7Ai)）-（王诗翔）
 - [第七期：Snakemake 介绍](week7/第七期.md)（[视频](https://www.bilibili.com/video/BV13C4y1h7Eq)）-（王轩）
-- [第八期：WES 变异检测-GATK流程](week8/第八期.md)（[视频-待更新]()）-（李慧敏）
+- [第八期：WES 变异检测-GATK流程](week8/第八周.md)（[视频](https://www.bilibili.com/video/BV1rA411e77K)）-（李慧敏）
 
 ***
 
