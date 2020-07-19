@@ -14,7 +14,7 @@
 - [第六期：R 包开发](week6/第六期.md)（[视频](https://www.bilibili.com/video/BV1ST4y1J7Ai)）-（王诗翔）
 - [第七期：Snakemake 介绍](week7/第七期.md)（[视频](https://www.bilibili.com/video/BV13C4y1h7Eq)）-（王轩）
 - [第八期：WES 变异检测-GATK流程](week8/第八周.md)（[视频](https://www.bilibili.com/video/BV1rA411e77K)）-（李慧敏）
-- [第九期：ggplot2 介绍与解读](week9/week9.md)（[视频-待更新]()）-（王诗翔）
+- [第九期：ggplot2 介绍与解读](week9/week9.md)（[视频](https://www.bilibili.com/video/BV1wk4y1m7rn)）-（王诗翔）
 
 ***
 
