@@ -17,7 +17,7 @@
 - [第九期：ggplot2 介绍与解读](week9/week9.md)（[视频](https://www.bilibili.com/video/BV1wk4y1m7rn)）-（王诗翔）
 - [第十期：聚类](week10/cluster.md)（[视频](https://www.bilibili.com/video/BV1Bh411o77W)）-（吴涛）
 - [第十一期：降维](week11/降维.md)（[视频](https://www.bilibili.com/video/BV1LC4y1873N)）-（陶紫玉）
-- [第十二期：基因富集分析](week12/基因富集分析.md)（[视频-待添加]()）-（王轩）
+- [第十二期：基因富集分析](week12/基因富集分析.md)（[视频](https://www.bilibili.com/video/BV1Yt4y1D7tG)）-（王轩）
 
 ***
 
