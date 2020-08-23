@@ -19,6 +19,7 @@
 - [第十一期：降维](week11/降维.md)（[视频](https://www.bilibili.com/video/BV1LC4y1873N)）-（陶紫玉）
 - [第十二期：基因富集分析](week12/基因富集分析.md)（[视频](https://www.bilibili.com/video/BV1Yt4y1D7tG)）-（王轩）
 - [第十三期：统计检验与多重矫正](week13/统计检验与多重矫正.md)（[视频](https://www.bilibili.com/video/BV1gA411n71B)）-（李惠敏）
+- [第十四期：线性回归](week14/linear_regression_analysis.md)（[视频](https://www.bilibili.com/video/BV1254y1e7LD)）-（吴涛）
 
 ***
 
