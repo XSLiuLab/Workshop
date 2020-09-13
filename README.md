@@ -22,6 +22,8 @@
 - [第十四期：线性回归](week14/linear_regression_analysis.md)（[视频](https://www.bilibili.com/video/BV1254y1e7LD)）-（吴涛）
 - [第十五期：热图](week15/热图workshop.md)（[视频](https://www.bilibili.com/video/BV1Pa4y1E7WS)）-（陶紫玉）
 - [第十六期：Pandas 库介绍](week16/Pandas.md)（[视频](https://www.bilibili.com/video/BV1fz4y1o7jh)）-（王轩）
+- [第十七期：奇异值分解](week17/奇异值分解.md)（[视频](https://www.bilibili.com/video/BV19A411E7KJ)）-（李惠敏）
+
 
 ***
 
