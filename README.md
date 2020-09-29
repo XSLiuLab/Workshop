@@ -24,6 +24,7 @@
 - [第十六期：Pandas 库介绍](week16/Pandas.md)（[视频](https://www.bilibili.com/video/BV1fz4y1o7jh)）-（王轩）
 - [第十七期：奇异值分解](week17/奇异值分解.md)（[视频](https://www.bilibili.com/video/BV19A411E7KJ)）-（李惠敏）
 - [第十八期：R 包开发介绍](week18/R_package_development_introduction.md)（[视频](https://www.bilibili.com/video/BV1ST4y1J7Ai)）-（吴涛）
+- [第十九期：Markdown 与 RMarkdown 最佳入口](week19/markdown-rmarkdown.md)（[视频](https://www.bilibili.com/video/BV1pk4y117Ng)）-（王诗翔）
 
 
 ***
