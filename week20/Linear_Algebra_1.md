@@ -1,4 +1,5 @@
 
+
 ### 参考资料：
 
 ![查看源图像](Linear_Algebra_1.assets/5a013149N8598768a.jpg)
@@ -20,24 +21,38 @@
 
 
 
-消元法解二元线性方程组，消去未知数 <a href="https://www.codecogs.com/eqnedit.php?latex=x_{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_{2}" title="x_{2}" /></a>
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{matrix}&space;a_{11}x_{1}&space;&plus;&space;a_{12}x_{2}&space;=&space;b_{1},\\&space;a_{21}x_{1}&space;&plus;&space;a_{22}x_{2}&space;=&space;b_{2}&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{matrix}&space;a_{11}x_{1}&space;&plus;&space;a_{12}x_{2}&space;=&space;b_{1},\\&space;a_{21}x_{1}&space;&plus;&space;a_{22}x_{2}&space;=&space;b_{2}&space;\end{matrix}\right." title="\left\{\begin{matrix} a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ a_{21}x_{1} + a_{22}x_{2} = b_{2} \end{matrix}\right." /></a>
-
-当<a href="https://www.codecogs.com/eqnedit.php?latex=a_{11}a_{22}-a_{12}a_{21}\neq&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{11}a_{22}-a_{12}a_{21}\neq&space;0" title="a_{11}a_{22}-a_{12}a_{21}\neq 0" /></a>时
+消元法解二元线性方程组，消去未知数 $x_{2}$ 
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=x_{1}&space;=&space;\frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}},&space;\&space;x_{2}&space;=&space;\frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_{1}&space;=&space;\frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}},&space;\&space;x_{2}&space;=&space;\frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}" title="x_{1} = \frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}}, \ x_{2} = \frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}" /></a>
+$$
+\left\{\begin{matrix}
+a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ 
+a_{21}x_{1} + a_{22}x_{2} = b_{2}
+\end{matrix}\right.
+$$
+当$a_{11}a_{22}-a_{12}a_{21}\neq 0$时
 
+
+$$
+x_{1} = \frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}}, \  
+x_{2} = \frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}
+$$
 二行二列的二阶行列式，记作
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{vmatrix}&space;a_{11}&space;\&space;\&space;a_{12}\\&space;a_{21}&space;\&space;\&space;a_{22}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{vmatrix}&space;a_{11}&space;\&space;\&space;a_{12}\\&space;a_{21}&space;\&space;\&space;a_{22}&space;\end{vmatrix}" title="\begin{vmatrix} a_{11} \ \ a_{12}\\ a_{21} \ \ a_{22} \end{vmatrix}" /></a>
+
+$$
+\begin{vmatrix}
+a_{11} \ \ a_{12}\\ 
+a_{21} \ \  a_{22}
+\end{vmatrix}
+$$
 
 - 行列式的元素或元
+- 
 
-  
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=a_{ij}(i&space;=&space;1,2;j&space;=&space;1,2)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{ij}(i&space;=&space;1,2;j&space;=&space;1,2)" title="a_{ij}(i = 1,2;j = 1,2)" /></a>
+$$
+a_{ij}(i = 1,2;j = 1,2)
+$$
 
 - 对角线法（仅适用于二阶和三阶行列式）
 
@@ -53,14 +68,26 @@
 #### 二、三阶行列式
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{vmatrix}&space;a_{11}&space;\&space;\&space;a_{12}\&space;\&space;a_{13}\\&space;a_{21}&space;\&space;\&space;a_{22}\&space;\&space;a_{23}\\&space;a_{31}&space;\&space;\&space;a_{32}\&space;\&space;a_{33}&space;\end{vmatrix}&space;=&space;a_{11}a_{22}a_{33}&space;&plus;&space;a_{12}a_{23}a_{31}&plus;a_{13}a_{21}a_{32}&space;-a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{vmatrix}&space;a_{11}&space;\&space;\&space;a_{12}\&space;\&space;a_{13}\\&space;a_{21}&space;\&space;\&space;a_{22}\&space;\&space;a_{23}\\&space;a_{31}&space;\&space;\&space;a_{32}\&space;\&space;a_{33}&space;\end{vmatrix}&space;=&space;a_{11}a_{22}a_{33}&space;&plus;&space;a_{12}a_{23}a_{31}&plus;a_{13}a_{21}a_{32}&space;-a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}" title="\begin{vmatrix} a_{11} \ \ a_{12}\ \ a_{13}\\ a_{21} \ \ a_{22}\ \ a_{23}\\ a_{31} \ \ a_{32}\ \ a_{33} \end{vmatrix} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32} -a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}" /></a>
+$$
+\begin{vmatrix}
+a_{11} \ \ a_{12}\ \ a_{13}\\ 
+a_{21} \ \  a_{22}\ \ a_{23}\\
+a_{31} \ \  a_{32}\ \ a_{33}
+\end{vmatrix} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32} -a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}
+$$
 
 - 对角线法
 
 例：
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{vmatrix}&space;1&&space;2&&space;-4\\&space;-2&&space;2&&space;1\\&space;-3&&space;4&&space;-2&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{vmatrix}&space;1&&space;2&&space;-4\\&space;-2&&space;2&&space;1\\&space;-3&&space;4&&space;-2&space;\end{vmatrix}" title="\begin{vmatrix} 1& 2& -4\\ -2& 2& 1\\ -3& 4& -2 \end{vmatrix}" /></a>
+$$
+\begin{vmatrix}
+ 1&  2& -4\\ 
+ -2&  2& 1\\ 
+ -3&  4& -2
+\end{vmatrix}
+$$
 
 ------
 
@@ -74,14 +101,18 @@
 
   
 
-设n个元素为1至n这n个自然数，规定从小到大为标准次序，假设排列，其中元素 <a href="https://www.codecogs.com/eqnedit.php?latex=p_{i}(i=1,2,...,n)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{i}(i=1,2,...,n)" title="p_{i}(i=1,2,...,n)" /></a>
+设n个元素为1至n这n个自然数，规定从小到大为标准次序，假设排列，其中元素 $p_{i}(i=1,2,...,n)$
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p_{1}p_{2}\cdots&space;p_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{1}p_{2}\cdots&space;p_{n}" title="p_{1}p_{2}\cdots p_{n}" /></a>
+$$
+p_{1}p_{2}\cdots p_{n}
+$$
 
-如果比<a href="https://www.codecogs.com/eqnedit.php?latex=p_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{i}" title="p_{i}" /></a> 大的且排在它前面的元素有<a href="https://www.codecogs.com/eqnedit.php?latex=t_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{i}" title="t_{i}" /></a>个，就说这个<a href="https://www.codecogs.com/eqnedit.php?latex=p_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{i}" title="p_{i}" /></a>元素逆序数是<a href="https://www.codecogs.com/eqnedit.php?latex=t_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{i}" title="t_{i}" /></a>，全体元素逆序数之和：
+如果比$p_{i}$ 大的且排在它前面的元素有$t_{i}$个，就说这个$p_{i}$元素逆序数是$t_{i}$，全体元素逆序数之和：
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=t&space;=&space;t_{1}&space;&plus;&space;t_{2}&space;&plus;&space;\cdots&space;&plus;&space;t_{n}&space;=&space;\sum_{t&space;=&space;1}^{n}t_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t&space;=&space;t_{1}&space;&plus;&space;t_{2}&space;&plus;&space;\cdots&space;&plus;&space;t_{n}&space;=&space;\sum_{t&space;=&space;1}^{n}t_{i}" title="t = t_{1} + t_{2} + \cdots + t_{n} = \sum_{t = 1}^{n}t_{i}" /></a>
+$$
+t = t_{1} + t_{2} + \cdots + t_{n} = \sum_{t = 1}^{n}t_{i}
+$$
 
 
 举例计算：
@@ -99,9 +130,10 @@
 先来看三阶行列式：
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{vmatrix}a_{11}&space;\&space;\&space;a_{12}\&space;\&space;a_{13}\\&space;a_{21}&space;\&space;\&space;a_{22}\&space;\&space;a_{23}\\a_{31}&space;\&space;\&space;a_{32}\&space;\&space;a_{33}\end{vmatrix}&space;=&space;a_{11}a_{22}a_{33}&space;&plus;&space;a_{12}a_{23}a_{31}&plus;a_{13}a_{21}a_{32}&space;-a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{vmatrix}a_{11}&space;\&space;\&space;a_{12}\&space;\&space;a_{13}\\&space;a_{21}&space;\&space;\&space;a_{22}\&space;\&space;a_{23}\\a_{31}&space;\&space;\&space;a_{32}\&space;\&space;a_{33}\end{vmatrix}&space;=&space;a_{11}a_{22}a_{33}&space;&plus;&space;a_{12}a_{23}a_{31}&plus;a_{13}a_{21}a_{32}&space;-a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}" title="\begin{vmatrix}a_{11} \ \ a_{12}\ \ a_{13}\\ a_{21} \ \ a_{22}\ \ a_{23}\\a_{31} \ \ a_{32}\ \ a_{33}\end{vmatrix} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32} -a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}" /></a>
-
-等号右边不管正负号，可以写成<a href="https://www.codecogs.com/eqnedit.php?latex={2p_{2}}a_{3p_{3}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?{2p_{2}}a_{3p_{3}}" title="{2p_{2}}a_{3p_{3}}" /></a>，第一个下标（行标）次序为123，第二个下标（列标）次序为 <a href="https://www.codecogs.com/eqnedit.php?latex=p_{1}p_{2}p_{3}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{1}p_{2}p_{3}" title="p_{1}p_{2}p_{3}" /></a>
+$$
+\begin{vmatrix}a_{11} \ \ a_{12}\ \ a_{13}\\ a_{21} \ \  a_{22}\ \ a_{23}\\a_{31} \ \  a_{32}\ \ a_{33}\end{vmatrix} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32} -a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}
+$$
+等号右边不管正负号，可以写成 $a_{1p_{1}}a_{2p_{2}}a_{3p_{3}}$ ，第一个下标（行标）次序为123，第二个下标（列标）次序为 $p_{1}p_{2}p_{3}$
 
 带正号列标排列：123，231，312【都是偶排列】
 
@@ -112,25 +144,47 @@
 经过一番操作，t是列标排列的逆序数，三阶行列式可以写成：
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{vmatrix}&space;a_{11}&space;\&space;\&space;a_{12}\&space;\&space;a_{13}\\&space;a_{21}&space;\&space;\&space;a_{22}\&space;\&space;a_{23}\\&space;a_{31}&space;\&space;\&space;a_{32}\&space;\&space;a_{33}&space;\end{vmatrix}=\sum&space;(-1)^{t}a_{1p_{1}}a_{2p_{2}}a_{3p_{3}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{vmatrix}&space;a_{11}&space;\&space;\&space;a_{12}\&space;\&space;a_{13}\\&space;a_{21}&space;\&space;\&space;a_{22}\&space;\&space;a_{23}\\&space;a_{31}&space;\&space;\&space;a_{32}\&space;\&space;a_{33}&space;\end{vmatrix}=\sum&space;(-1)^{t}a_{1p_{1}}a_{2p_{2}}a_{3p_{3}}" title="\begin{vmatrix} a_{11} \ \ a_{12}\ \ a_{13}\\ a_{21} \ \ a_{22}\ \ a_{23}\\ a_{31} \ \ a_{32}\ \ a_{33} \end{vmatrix}=\sum (-1)^{t}a_{1p_{1}}a_{2p_{2}}a_{3p_{3}}" /></a>
+$$
+\begin{vmatrix}
+a_{11} \ \ a_{12}\ \ a_{13}\\ 
+a_{21} \ \  a_{22}\ \ a_{23}\\
+a_{31} \ \  a_{32}\ \ a_{33}
+\end{vmatrix}=\sum (-1)^{t}a_{1p_{1}}a_{2p_{2}}a_{3p_{3}}
+$$
 
 - **定义**  推广到n阶行列式
 
   
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\sum&space;(-1)^{t}a_{1p_{1}}a_{2p_{2}}\cdots&space;a_{np_{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum&space;(-1)^{t}a_{1p_{1}}a_{2p_{2}}\cdots&space;a_{np_{n}}" title="\sum (-1)^{t}a_{1p_{1}}a_{2p_{2}}\cdots a_{np_{n}}" /></a>
+$$
+\sum (-1)^{t}a_{1p_{1}}a_{2p_{2}}\cdots a_{np_{n}}
+$$
+
 记作：
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a_{nn}&space;\end{vmatrix}" title="D = \begin{vmatrix} a_{11} &a_{12} &\cdots &a_{1n} \\ a_{21} &a_{22} &\cdots &a_{2n} \\ \vdots &\vdots & &\vdots \\ a_{n1} &a_{n2} &\cdots &a_{nn} \end{vmatrix}" /></a>
+$$
+D = \begin{vmatrix}
+a_{11} &a_{12}  &\cdots   &a_{1n} \\ 
+a_{21} &a_{22}  &\cdots   &a_{2n} \\ 
+\vdots &\vdots  &   &\vdots \\ 
+a_{n1} &a_{n2}  &\cdots   &a_{nn} 
+\end{vmatrix}
+$$
 
 - 对角行列式
 
 证明n阶行列式
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{vmatrix}&space;\lambda&space;_{1}&space;&&space;&&space;&&space;&&space;\\&space;&&space;&\lambda&space;_{2}&space;&&space;\\&space;&&space;&&space;&\ddots&space;&&space;\\&space;&&space;&&space;&&space;&\lambda&space;_{n}&space;\end{vmatrix}=&space;\lambda&space;_{1}\lambda&space;_{2}\cdots&space;\lambda&space;_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{vmatrix}&space;\lambda&space;_{1}&space;&&space;&&space;&&space;&&space;\\&space;&&space;&\lambda&space;_{2}&space;&&space;\\&space;&&space;&&space;&\ddots&space;&&space;\\&space;&&space;&&space;&&space;&\lambda&space;_{n}&space;\end{vmatrix}=&space;\lambda&space;_{1}\lambda&space;_{2}\cdots&space;\lambda&space;_{n}" title="\begin{vmatrix} \lambda _{1} & & & & \\ & &\lambda _{2} & \\ & & &\ddots & \\ & & & &\lambda _{n} \end{vmatrix}= \lambda _{1}\lambda _{2}\cdots \lambda _{n}" /></a>
-
+$$
+\begin{vmatrix}
+\lambda _{1} &  &  &  & \\ 
+ &  &\lambda _{2}  & \\ 
+ &  &  &\ddots   & \\ 
+ &  &  &  &\lambda _{n} 
+\end{vmatrix}= \lambda _{1}\lambda _{2}\cdots \lambda _{n}
+$$
 其中没有写出来的元素都是0，左端称为**对角行列式**
 
 
@@ -142,7 +196,14 @@
 证明以下行列式
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D=\begin{vmatrix}&space;a_{11}&&space;&&space;&&space;0&&space;\\&space;a_{21}&a_{22}&&space;&&space;&&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;\ddots&space;&&space;&&space;\\&space;a_{n1}&&space;a_{n2}&&space;\cdots&space;&a_{nn}&space;\end{vmatrix}&space;=&space;a_{11}a_{22}\cdots&space;a_{nn}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D=\begin{vmatrix}&space;a_{11}&&space;&&space;&&space;0&&space;\\&space;a_{21}&a_{22}&&space;&&space;&&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;\ddots&space;&&space;&&space;\\&space;a_{n1}&&space;a_{n2}&&space;\cdots&space;&a_{nn}&space;\end{vmatrix}&space;=&space;a_{11}a_{22}\cdots&space;a_{nn}" title="D=\begin{vmatrix} a_{11}& & & 0& \\ a_{21}&a_{22}& & & \\ \vdots & \vdots & \ddots & & \\ a_{n1}& a_{n2}& \cdots &a_{nn} \end{vmatrix} = a_{11}a_{22}\cdots a_{nn}" /></a>
+$$
+D=\begin{vmatrix}
+ a_{11}&  &  &  0& \\ 
+ a_{21}&a_{22}&  &  & \\ 
+ \vdots &  \vdots & \ddots  &  & \\  
+ a_{n1}&  a_{n2}& \cdots  &a_{nn}  
+\end{vmatrix} = a_{11}a_{22}\cdots a_{nn}
+$$
 
 ------
 
@@ -155,25 +216,31 @@
 原排列如下
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=a_{1}...a_{l}abb_{1}...b_{m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{1}...a_{l}abb_{1}...b_{m}" title="a_{1}...a_{l}abb_{1}...b_{m}" /></a>
+$$
+a_{1}...a_{l}abb_{1}...b_{m}
+$$
 对换ab
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=a_{1}...a_{l}bab_{1}...b_{m}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{1}...a_{l}bab_{1}...b_{m}" title="a_{1}...a_{l}bab_{1}...b_{m}" /></a>
+$$
+a_{1}...a_{l}bab_{1}...b_{m}
+$$
 如果a<b，a的逆序数增加1，b的逆序数不变的，如果a>b，b的逆序数减少1，a的逆序数不变，因此奇偶性发生了改变。
 
 **再证任意对换**：
 
-设排列<a href="https://www.codecogs.com/eqnedit.php?latex=a_{1}...a_{l}ab_{1}...b_{m}bc_{1}...c_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{1}...a_{l}ab_{1}...b_{m}bc_{1}...c_{n}" title="a_{1}...a_{l}ab_{1}...b_{m}bc_{1}...c_{n}" /></a>，讲a和b进行对换，先做m次相邻对换变成，<a href="https://www.codecogs.com/eqnedit.php?latex=a_{1}...a_{l}abb_{1}...b_{m}c_{1}...c_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{1}...a_{l}abb_{1}...b_{m}c_{1}...c_{n}" title="a_{1}...a_{l}abb_{1}...b_{m}c_{1}...c_{n}" /></a>，b移动到a后，再做m+1次对换变成，<a href="https://www.codecogs.com/eqnedit.php?latex=a_{1}...a_{l}bb_{1}...b_{m}ac_{1}...c_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{1}...a_{l}bb_{1}...b_{m}ac_{1}...c_{n}" title="a_{1}...a_{l}bb_{1}...b_{m}ac_{1}...c_{n}" /></a>，完成a和b的对换，总共做了2m+1次相邻变换，所以变换前后两个排列的奇偶性相反。
+设排列$a_{1}...a_{l}ab_{1}...b_{m}bc_{1}...c_{n}$，讲a和b进行对换，先做m次相邻对换变成，$a_{1}...a_{l}abb_{1}...b_{m}c_{1}...c_{n}$，b移动到a后，再做m+1次对换变成，$a_{1}...a_{l}bb_{1}...b_{m}ac_{1}...c_{n}$，完成a和b的对换，总共做了2m+1次相邻变换，所以变换前后两个排列的奇偶性相反。
 
 
 
 **定理2**	n阶行列式也可定义为
 
-其中t为行标排列	<a href="https://www.codecogs.com/eqnedit.php?latex=p_{1}p_{2}...p_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{1}p_{2}...p_{n}" title="p_{1}p_{2}...p_{n}" /></a>	的逆序数
+其中t为行标排列	$p_{1}p_{2}...p_{n}$	的逆序数
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D=\sum&space;(-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots&space;a_{p_{n}n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D=\sum&space;(-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots&space;a_{p_{n}n}" title="D=\sum (-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots a_{p_{n}n}" /></a>
+$$
+D=\sum (-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots a_{p_{n}n}
+$$
 
 ------
 
@@ -183,13 +250,27 @@
 
 - 转置行列式
 
-  <a href="https://www.codecogs.com/eqnedit.php?latex=D^{T}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D^{T}" title="D^{T}" /></a>称为行列式D的转置行列式
+  $D^{T}$称为行列式$D$的转置行列式
   
   
-<a href="https://www.codecogs.com/eqnedit.php?latex=D=\begin{vmatrix}&space;a_{11}&&space;a_{21}&space;&&space;\cdots&space;&&space;a_{n1}&space;\\&space;a_{12}&&space;a_{22}&&space;\cdots&space;&&space;a_{n2}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;a_{1n}&&space;a_{2n}&&space;\cdots&space;&&space;a_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D=\begin{vmatrix}&space;a_{11}&&space;a_{21}&space;&&space;\cdots&space;&&space;a_{n1}&space;\\&space;a_{12}&&space;a_{22}&&space;\cdots&space;&&space;a_{n2}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;a_{1n}&&space;a_{2n}&&space;\cdots&space;&&space;a_{nn}&space;\end{vmatrix}" title="D=\begin{vmatrix} a_{11}& a_{21} & \cdots & a_{n1} \\ a_{12}& a_{22}& \cdots & a_{n2} \\ \vdots & \vdots & & \vdots \\ a_{1n}& a_{2n}& \cdots & a_{nn} \end{vmatrix}" /></a>
+  $$
+  D=\begin{vmatrix}
+   a_{11}& a_{21}  & \cdots  & a_{n1}  \\ 
+   a_{12}& a_{22}& \cdots  & a_{n2}  \\ 
+   \vdots &  \vdots &    & \vdots   \\  
+   a_{1n}&  a_{2n}& \cdots  & a_{nn}  
+  \end{vmatrix}
+  $$
   
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D^{T}=\begin{vmatrix}&space;a_{11}&&space;a_{12}&space;&&space;\cdots&space;&&space;a_{1n}&space;\\&space;a_{21}&&space;a_{22}&&space;\cdots&space;&&space;a_{2n}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;a_{n1}&&space;a_{n2}&&space;\cdots&space;&&space;a_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D^{T}=\begin{vmatrix}&space;a_{11}&&space;a_{12}&space;&&space;\cdots&space;&&space;a_{1n}&space;\\&space;a_{21}&&space;a_{22}&&space;\cdots&space;&&space;a_{2n}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;a_{n1}&&space;a_{n2}&&space;\cdots&space;&&space;a_{nn}&space;\end{vmatrix}" title="D^{T}=\begin{vmatrix} a_{11}& a_{12} & \cdots & a_{1n} \\ a_{21}& a_{22}& \cdots & a_{2n} \\ \vdots & \vdots & & \vdots \\ a_{n1}& a_{n2}& \cdots & a_{nn} \end{vmatrix}" /></a>
+$$
+D^{T}=\begin{vmatrix}
+ a_{11}& a_{12}  & \cdots  & a_{1n}  \\ 
+ a_{21}& a_{22}& \cdots  & a_{2n}  \\ 
+ \vdots &  \vdots &    & \vdots   \\  
+ a_{n1}&  a_{n2}& \cdots  & a_{nn}  
+\end{vmatrix}
+$$
 
 
 
@@ -200,16 +281,24 @@
 记D的转置行列式为：
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D^{T}=\begin{vmatrix}&space;b_{11}&&space;b_{12}&space;&&space;\cdots&space;&&space;b_{1n}&space;\\&space;b_{21}&&space;b_{22}&&space;\cdots&space;&&space;b_{2n}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;b_{n1}&&space;b_{n2}&&space;\cdots&space;&&space;b_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D^{T}=\begin{vmatrix}&space;b_{11}&&space;b_{12}&space;&&space;\cdots&space;&&space;b_{1n}&space;\\&space;b_{21}&&space;b_{22}&&space;\cdots&space;&&space;b_{2n}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;b_{n1}&&space;b_{n2}&&space;\cdots&space;&&space;b_{nn}&space;\end{vmatrix}" title="D^{T}=\begin{vmatrix} b_{11}& b_{12} & \cdots & b_{1n} \\ b_{21}& b_{22}& \cdots & b_{2n} \\ \vdots & \vdots & & \vdots \\ b_{n1}& b_{n2}& \cdots & b_{nn} \end{vmatrix}" /></a>
+$$
+D^{T}=\begin{vmatrix}
+ b_{11}& b_{12}  & \cdots  & b_{1n}  \\ 
+ b_{21}& b_{22}& \cdots  & b_{2n}  \\ 
+ \vdots &  \vdots &    & \vdots   \\  
+ b_{n1}&  b_{n2}& \cdots  & b_{nn}  
+\end{vmatrix}
+$$
 
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=b_{ji}=a_{ij}(i,j&space;=&space;1,2,...,n)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{ji}=a_{ij}(i,j&space;=&space;1,2,...,n)" title="b_{ji}=a_{ij}(i,j = 1,2,...,n)" /></a>，按照定义：
+$b_{ji}=a_{ij}(i,j = 1,2,...,n)$，按照定义：
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D^{T}=\sum&space;(-1)^{t}b_{1p_{1}}b_{2p_{2}}\cdots&space;b_{np_{n}}=\sum&space;(-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots&space;a_{p_{n}n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D^{T}=\sum&space;(-1)^{t}b_{1p_{1}}b_{2p_{2}}\cdots&space;b_{np_{n}}=\sum&space;(-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots&space;a_{p_{n}n}" title="D^{T}=\sum (-1)^{t}b_{1p_{1}}b_{2p_{2}}\cdots b_{np_{n}}=\sum (-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots a_{p_{n}n}" /></a>
-
-由定理2，<a href="https://www.codecogs.com/eqnedit.php?latex=D=\sum&space;(-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots&space;a_{p_{n}n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D=\sum&space;(-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots&space;a_{p_{n}n}" title="D=\sum (-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots a_{p_{n}n}" /></a>，因此<a href="https://www.codecogs.com/eqnedit.php?latex=D=D^{T}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D=D^{T}" title="D=D^{T}" /></a>
+$$
+D^{T}=\sum (-1)^{t}b_{1p_{1}}b_{2p_{2}}\cdots b_{np_{n}}=\sum (-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots a_{p_{n}n}
+$$
+由定理2，$D=\sum (-1)^{t}a_{p_{1}1}a_{p_{2}2}\cdots a_{p_{n}n}$，因此$D=D^{T}$
 
 通过这个性质可知，行列式的行和列地位相当，凡是行具有的性质，列也一样，反过来说也成立。
 
@@ -219,33 +308,47 @@
 
 证明：
 
-假设行列式<a href="https://www.codecogs.com/eqnedit.php?latex=D_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D_{1}" title="D_{1}" /></a>是由原行列式交换i，j两行得到的
+假设行列式$D_{1}$是由原行列式交换i，j两行得到的
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D_{1}=\begin{vmatrix}&space;b_{11}&&space;b_{12}&space;&&space;\cdots&space;&&space;b_{1n}&space;\\&space;b_{21}&&space;b_{22}&&space;\cdots&space;&&space;b_{2n}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;b_{n1}&&space;b_{n2}&&space;\cdots&space;&&space;b_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D_{1}=\begin{vmatrix}&space;b_{11}&&space;b_{12}&space;&&space;\cdots&space;&&space;b_{1n}&space;\\&space;b_{21}&&space;b_{22}&&space;\cdots&space;&&space;b_{2n}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;b_{n1}&&space;b_{n2}&&space;\cdots&space;&&space;b_{nn}&space;\end{vmatrix}" title="D_{1}=\begin{vmatrix} b_{11}& b_{12} & \cdots & b_{1n} \\ b_{21}& b_{22}& \cdots & b_{2n} \\ \vdots & \vdots & & \vdots \\ b_{n1}& b_{n2}& \cdots & b_{nn} \end{vmatrix}" /></a>
-
-当<a href="https://www.codecogs.com/eqnedit.php?latex=k\neq&space;i,j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k\neq&space;i,j" title="k\neq i,j" /></a>时，<a href="https://www.codecogs.com/eqnedit.php?latex=b_{kp}&space;=&space;a_{kp}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{kp}&space;=&space;a_{kp}" title="b_{kp} = a_{kp}" /></a>，当<a href="https://www.codecogs.com/eqnedit.php?latex=k=i,j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k=i,j" title="k=i,j" /></a>时，<a href="https://www.codecogs.com/eqnedit.php?latex=b_{ip}&space;=&space;a_{jp}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{ip}&space;=&space;a_{jp}" title="b_{ip} = a_{jp}" /></a>，<a href="https://www.codecogs.com/eqnedit.php?latex=b_{jp}&space;=&space;a_{ip}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{jp}&space;=&space;a_{ip}" title="b_{jp} = a_{ip}" /></a>，于是
-
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=D_{1}=\sum&space;(-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D_{1}=\sum&space;(-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}" title="D_{1}=\sum (-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}" /></a>
-
-<a href="https://www.codecogs.com/eqnedit.php?latex==\sum&space;(-1)^{t}a_{1p_{1}}...a_{jp_{i}}...a_{ip_{j}}...a_{np_{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=\sum&space;(-1)^{t}a_{1p_{1}}...a_{jp_{i}}...a_{ip_{j}}...a_{np_{n}}" title="=\sum (-1)^{t}a_{1p_{1}}...a_{jp_{i}}...a_{ip_{j}}...a_{np_{n}}" /></a>
-
-<a href="https://www.codecogs.com/eqnedit.php?latex==\sum&space;(-1)^{t}a_{1p_{1}}...a_{ip_{j}}...a_{jp_{i}}...a_{np_{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=\sum&space;(-1)^{t}a_{1p_{1}}...a_{ip_{j}}...a_{jp_{i}}...a_{np_{n}}" title="=\sum (-1)^{t}a_{1p_{1}}...a_{ip_{j}}...a_{jp_{i}}...a_{np_{n}}" /></a>
-
-1...i...j...n为自然排列，t为<a href="https://www.codecogs.com/eqnedit.php?latex=p_{1}...p_{i}...p_{j}...p_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{1}...p_{i}...p_{j}...p_{n}" title="p_{1}...p_{i}...p_{j}...p_{n}" /></a>的逆序数，设<a href="https://www.codecogs.com/eqnedit.php?latex=p_{1}...p_{j}...p_{i}...p_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{1}...p_{j}...p_{i}...p_{n}" title="p_{1}...p_{j}...p_{i}...p_{n}" /></a>的逆序数为<a href="https://www.codecogs.com/eqnedit.php?latex=t_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{1}" title="t_{1}" /></a>，故<a href="https://www.codecogs.com/eqnedit.php?latex=(-1)^{t}&space;=&space;-(-1)^{t_{1}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(-1)^{t}&space;=&space;-(-1)^{t_{1}}" title="(-1)^{t} = -(-1)^{t_{1}}" /></a>
+$$
+D_{1}=\begin{vmatrix}
+ b_{11}& b_{12}  & \cdots  & b_{1n}  \\ 
+ b_{21}& b_{22}& \cdots  & b_{2n}  \\ 
+ \vdots &  \vdots &    & \vdots   \\  
+ b_{n1}&  b_{n2}& \cdots  & b_{nn}  
+\end{vmatrix}
+$$
+当$k\neq i,j$时，$ b_{kp} =  a_{kp}$，当$k=i,j$时，$ b_{ip} =  a_{jp}$，$b_{jp} =  a_{ip}$，于是
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D_{1}=-\sum&space;(-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}=-D" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D_{1}=-\sum&space;(-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}=-D" title="D_{1}=-\sum (-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}=-D" /></a>
+$$
+D_{1}=\sum (-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}
+$$
+
+$$
+=\sum (-1)^{t}a_{1p_{1}}...a_{jp_{i}}...a_{ip_{j}}...a_{np_{n}}
+$$
+
+$$
+=\sum (-1)^{t}a_{1p_{1}}...a_{ip_{j}}...a_{jp_{i}}...a_{np_{n}}
+$$
+
+$1...i...j...n$为自然排列，t为$p_{1}...p_{i}...p_{j}...p_{n}$的逆序数，设$p_{1}...p_{j}...p_{i}...p_{n}$的逆序数为$t_{1}$，故$(-1)^{t} = -(-1)^{t_{1}}$
+
+
+$$
+D_{1}=-\sum (-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}=-D
+$$
 
 
 ##### 推论	如果行列式有两行（列）完全相同，则此行列式等于0
 
-因为这两行互换的结果是<a href="https://www.codecogs.com/eqnedit.php?latex=D=-D" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D=-D" title="D=-D" /></a>，所以<a href="https://www.codecogs.com/eqnedit.php?latex=D=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D=0" title="D=0" /></a>
+因为这两行互换的结果是$D=-D$，所以$D=0$
 
 
 
-##### 性质3	行列式的某一行（列）中所有的元素都乘以同一个数k，等于用数k乘以此行列式
+##### 性质3	行列式的某一行（列）中所有的元素都乘以同一个数$k$，等于用数$k$乘以此行列式
 
 **推论**	**行列式的某一行（列）中所有的元素的公因子可以提到行列式记号的外面**
 
@@ -259,13 +362,31 @@
 
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&(a_{1i}&plus;a{}'_{1i})&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&(a_{2i}&plus;a{}'_{2i})&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&(a_{ni}&plus;a{}'_{ni})&space;&a_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&(a_{1i}&plus;a{}'_{1i})&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&(a_{2i}&plus;a{}'_{2i})&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&(a_{ni}&plus;a{}'_{ni})&space;&a_{nn}&space;\end{vmatrix}" title="D = \begin{vmatrix} a_{11} &a_{12} &\cdots &(a_{1i}+a{}'_{1i}) &a_{1n} \\ a_{21} &a_{22} &\cdots &(a_{2i}+a{}'_{2i}) &a_{2n} \\ \vdots &\vdots & &\vdots &\vdots \\ a_{n1} &a_{n2} &\cdots &(a_{ni}+a{}'_{ni}) &a_{nn} \end{vmatrix}" /></a>
-
+$$
+D = \begin{vmatrix}
+a_{11} &a_{12}  &\cdots &(a_{1i}+a{}'_{1i})   &a_{1n} \\ 
+a_{21} &a_{22}  &\cdots &(a_{2i}+a{}'_{2i})  &a_{2n} \\ 
+\vdots &\vdots  &   &\vdots &\vdots \\ 
+a_{n1} &a_{n2}  &\cdots  &(a_{ni}+a{}'_{ni}) &a_{nn} 
+\end{vmatrix}
+$$
 
 **则$D$等于下列两个行列式之和**
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a_{1i}&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a_{2i}&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a_{ni}&space;&a_{nn}&space;\end{vmatrix}&plus;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a{}'_{1i}&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a{}'_{2i}&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a{}'_{ni}&space;&a_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a_{1i}&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a_{2i}&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a_{ni}&space;&a_{nn}&space;\end{vmatrix}&plus;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a{}'_{1i}&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a{}'_{2i}&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a{}'_{ni}&space;&a_{nn}&space;\end{vmatrix}" title="D = \begin{vmatrix} a_{11} &a_{12} &\cdots &a_{1i} &a_{1n} \\ a_{21} &a_{22} &\cdots &a_{2i} &a_{2n} \\ \vdots &\vdots & &\vdots &\vdots \\ a_{n1} &a_{n2} &\cdots &a_{ni} &a_{nn} \end{vmatrix}+\begin{vmatrix} a_{11} &a_{12} &\cdots &a{}'_{1i} &a_{1n} \\ a_{21} &a_{22} &\cdots &a{}'_{2i} &a_{2n} \\ \vdots &\vdots & &\vdots &\vdots \\ a_{n1} &a_{n2} &\cdots &a{}'_{ni} &a_{nn} \end{vmatrix}" /></a>
+$$
+D = \begin{vmatrix}
+a_{11} &a_{12}  &\cdots &a_{1i}   &a_{1n} \\ 
+a_{21} &a_{22}  &\cdots &a_{2i}  &a_{2n} \\ 
+\vdots &\vdots  &   &\vdots &\vdots \\ 
+a_{n1} &a_{n2}  &\cdots  &a_{ni} &a_{nn} 
+\end{vmatrix}+\begin{vmatrix}
+a_{11} &a_{12}  &\cdots &a{}'_{1i}   &a_{1n} \\ 
+a_{21} &a_{22}  &\cdots &a{}'_{2i}  &a_{2n} \\ 
+\vdots &\vdots  &   &\vdots &\vdots \\ 
+a_{n1} &a_{n2}  &\cdots  &a{}'_{ni} &a_{nn} 
+\end{vmatrix}
+$$
 
 
 
@@ -275,7 +396,15 @@
 尝试计算一下:
 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{vmatrix}&space;3&space;&&space;1&space;&&space;-1&space;&&space;2\\&space;-1&space;&&space;1&&space;3&&space;-4\\&space;2&space;&&space;0&&space;1&&space;-1\\&space;1&space;&&space;-5&&space;3&&space;-3&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{vmatrix}&space;3&space;&&space;1&space;&&space;-1&space;&&space;2\\&space;-1&space;&&space;1&&space;3&&space;-4\\&space;2&space;&&space;0&&space;1&&space;-1\\&space;1&space;&&space;-5&&space;3&&space;-3&space;\end{vmatrix}" title="\begin{vmatrix} 3 & 1 & -1 & 2\\ -1 & 1& 3& -4\\ 2 & 0& 1& -1\\ 1 & -5& 3& -3 \end{vmatrix}" /></a>
+$$
+\begin{vmatrix}
+3 & 1 & -1 & 2\\ 
+-1 &  1&  3& -4\\ 
+2 &  0&  1& -1\\ 
+1 &  -5&  3& -3
+\end{vmatrix}
+$$
+
 
 
 答案：【40】
