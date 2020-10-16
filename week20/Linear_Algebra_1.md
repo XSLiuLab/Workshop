@@ -20,27 +20,14 @@
 
 
 
-消元法解二元线性方程组，消去未知数 $x_{2}$ 
-
-![](http://latex.codecogs.com/gif.latex?\\sigma=\sqrt{\frac{1}{n}{\sum_{k=1}^n(x_i-\bar{x})^2}})
-
-![](http://latex.codecogs.com/gif.latex?\\\left\{\begin{matrix};a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ ;a_{21}x_{1} + a_{22}x_{2} = b_{2};\end{matrix}\right.)
+消元法解二元线性方程组，消去未知数 <a href="https://www.codecogs.com/eqnedit.php?latex=x_{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_{2}" title="x_{2}" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\left\{\begin{matrix}&space;a_{11}x_{1}&space;&plus;&space;a_{12}x_{2}&space;=&space;b_{1},\\&space;a_{21}x_{1}&space;&plus;&space;a_{22}x_{2}&space;=&space;b_{2}&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?\left\{\begin{matrix}&space;a_{11}x_{1}&space;&plus;&space;a_{12}x_{2}&space;=&space;b_{1},\\&space;a_{21}x_{1}&space;&plus;&space;a_{22}x_{2}&space;=&space;b_{2}&space;\end{matrix}\right." title="\left\{\begin{matrix} a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ a_{21}x_{1} + a_{22}x_{2} = b_{2} \end{matrix}\right." /></a>
 
-$$
-\left\{\begin{matrix}
-a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ 
-a_{21}x_{1} + a_{22}x_{2} = b_{2}
-\end{matrix}\right.
-$$
-当$a_{11}a_{22}-a_{12}a_{21}\neq 0$时
+当<a href="https://www.codecogs.com/eqnedit.php?latex=a_{11}a_{22}-a_{12}a_{21}\neq&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?a_{11}a_{22}-a_{12}a_{21}\neq&space;0" title="a_{11}a_{22}-a_{12}a_{21}\neq 0" /></a>时
 
 
-$$
-x_{1} = \frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}}, \  
-x_{2} = \frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=x_{1}&space;=&space;\frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}},&space;\&space;x_{2}&space;=&space;\frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_{1}&space;=&space;\frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}},&space;\&space;x_{2}&space;=&space;\frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}" title="x_{1} = \frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}}, \ x_{2} = \frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}" /></a>
 二行二列的二阶行列式，记作
 
 
