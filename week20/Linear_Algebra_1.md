@@ -223,36 +223,28 @@
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=D_{1}=\begin{vmatrix}&space;b_{11}&&space;b_{12}&space;&&space;\cdots&space;&&space;b_{1n}&space;\\&space;b_{21}&&space;b_{22}&&space;\cdots&space;&&space;b_{2n}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;b_{n1}&&space;b_{n2}&&space;\cdots&space;&&space;b_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D_{1}=\begin{vmatrix}&space;b_{11}&&space;b_{12}&space;&&space;\cdots&space;&&space;b_{1n}&space;\\&space;b_{21}&&space;b_{22}&&space;\cdots&space;&&space;b_{2n}&space;\\&space;\vdots&space;&&space;\vdots&space;&&space;&&space;\vdots&space;\\&space;b_{n1}&&space;b_{n2}&&space;\cdots&space;&&space;b_{nn}&space;\end{vmatrix}" title="D_{1}=\begin{vmatrix} b_{11}& b_{12} & \cdots & b_{1n} \\ b_{21}& b_{22}& \cdots & b_{2n} \\ \vdots & \vdots & & \vdots \\ b_{n1}& b_{n2}& \cdots & b_{nn} \end{vmatrix}" /></a>
 
-当<a href="https://www.codecogs.com/eqnedit.php?latex=k\neq&space;i,j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k\neq&space;i,j" title="k\neq i,j" /></a>时，<a href="https://www.codecogs.com/eqnedit.php?latex=b_{kp}&space;=&space;a_{kp}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{kp}&space;=&space;a_{kp}" title="b_{kp} = a_{kp}" /></a>，当$k=i,j$时，$ b_{ip} =  a_{jp}$，$b_{jp} =  a_{ip}$，于是
+当<a href="https://www.codecogs.com/eqnedit.php?latex=k\neq&space;i,j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k\neq&space;i,j" title="k\neq i,j" /></a>时，<a href="https://www.codecogs.com/eqnedit.php?latex=b_{kp}&space;=&space;a_{kp}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{kp}&space;=&space;a_{kp}" title="b_{kp} = a_{kp}" /></a>，当<a href="https://www.codecogs.com/eqnedit.php?latex=k=i,j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k=i,j" title="k=i,j" /></a>时，<a href="https://www.codecogs.com/eqnedit.php?latex=b_{ip}&space;=&space;a_{jp}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{ip}&space;=&space;a_{jp}" title="b_{ip} = a_{jp}" /></a>，<a href="https://www.codecogs.com/eqnedit.php?latex=b_{jp}&space;=&space;a_{ip}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b_{jp}&space;=&space;a_{ip}" title="b_{jp} = a_{ip}" /></a>，于是
 
 
-$$
-D_{1}=\sum (-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=D_{1}=\sum&space;(-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D_{1}=\sum&space;(-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}" title="D_{1}=\sum (-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}" /></a>
 
-$$
-=\sum (-1)^{t}a_{1p_{1}}...a_{jp_{i}}...a_{ip_{j}}...a_{np_{n}}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex==\sum&space;(-1)^{t}a_{1p_{1}}...a_{jp_{i}}...a_{ip_{j}}...a_{np_{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=\sum&space;(-1)^{t}a_{1p_{1}}...a_{jp_{i}}...a_{ip_{j}}...a_{np_{n}}" title="=\sum (-1)^{t}a_{1p_{1}}...a_{jp_{i}}...a_{ip_{j}}...a_{np_{n}}" /></a>
 
-$$
-=\sum (-1)^{t}a_{1p_{1}}...a_{ip_{j}}...a_{jp_{i}}...a_{np_{n}}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex==\sum&space;(-1)^{t}a_{1p_{1}}...a_{ip_{j}}...a_{jp_{i}}...a_{np_{n}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?=\sum&space;(-1)^{t}a_{1p_{1}}...a_{ip_{j}}...a_{jp_{i}}...a_{np_{n}}" title="=\sum (-1)^{t}a_{1p_{1}}...a_{ip_{j}}...a_{jp_{i}}...a_{np_{n}}" /></a>
 
-$1...i...j...n$为自然排列，t为$p_{1}...p_{i}...p_{j}...p_{n}$的逆序数，设$p_{1}...p_{j}...p_{i}...p_{n}$的逆序数为$t_{1}$，故$(-1)^{t} = -(-1)^{t_{1}}$
+1...i...j...n为自然排列，t为<a href="https://www.codecogs.com/eqnedit.php?latex=p_{1}...p_{i}...p_{j}...p_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{1}...p_{i}...p_{j}...p_{n}" title="p_{1}...p_{i}...p_{j}...p_{n}" /></a>的逆序数，设<a href="https://www.codecogs.com/eqnedit.php?latex=p_{1}...p_{j}...p_{i}...p_{n}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p_{1}...p_{j}...p_{i}...p_{n}" title="p_{1}...p_{j}...p_{i}...p_{n}" /></a>的逆序数为<a href="https://www.codecogs.com/eqnedit.php?latex=t_{1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t_{1}" title="t_{1}" /></a>，故<a href="https://www.codecogs.com/eqnedit.php?latex=(-1)^{t}&space;=&space;-(-1)^{t_{1}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(-1)^{t}&space;=&space;-(-1)^{t_{1}}" title="(-1)^{t} = -(-1)^{t_{1}}" /></a>
 
 
-$$
-D_{1}=-\sum (-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}=-D
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=D_{1}=-\sum&space;(-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}=-D" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D_{1}=-\sum&space;(-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}=-D" title="D_{1}=-\sum (-1)^{t}b_{1p_{1}}...b_{ip_{i}}...b_{jp_{j}}...b_{np_{n}}=-D" /></a>
 
 
 ##### 推论	如果行列式有两行（列）完全相同，则此行列式等于0
 
-因为这两行互换的结果是$D=-D$，所以$D=0$
+因为这两行互换的结果是<a href="https://www.codecogs.com/eqnedit.php?latex=D=-D" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D=-D" title="D=-D" /></a>，所以<a href="https://www.codecogs.com/eqnedit.php?latex=D=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D=0" title="D=0" /></a>
 
 
 
-##### 性质3	行列式的某一行（列）中所有的元素都乘以同一个数$k$，等于用数$k$乘以此行列式
+##### 性质3	行列式的某一行（列）中所有的元素都乘以同一个数k，等于用数k乘以此行列式
 
 **推论**	**行列式的某一行（列）中所有的元素的公因子可以提到行列式记号的外面**
 
@@ -266,31 +258,13 @@ $$
 
 
 
-$$
-D = \begin{vmatrix}
-a_{11} &a_{12}  &\cdots &(a_{1i}+a{}'_{1i})   &a_{1n} \\ 
-a_{21} &a_{22}  &\cdots &(a_{2i}+a{}'_{2i})  &a_{2n} \\ 
-\vdots &\vdots  &   &\vdots &\vdots \\ 
-a_{n1} &a_{n2}  &\cdots  &(a_{ni}+a{}'_{ni}) &a_{nn} 
-\end{vmatrix}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&(a_{1i}&plus;a{}'_{1i})&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&(a_{2i}&plus;a{}'_{2i})&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&(a_{ni}&plus;a{}'_{ni})&space;&a_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&(a_{1i}&plus;a{}'_{1i})&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&(a_{2i}&plus;a{}'_{2i})&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&(a_{ni}&plus;a{}'_{ni})&space;&a_{nn}&space;\end{vmatrix}" title="D = \begin{vmatrix} a_{11} &a_{12} &\cdots &(a_{1i}+a{}'_{1i}) &a_{1n} \\ a_{21} &a_{22} &\cdots &(a_{2i}+a{}'_{2i}) &a_{2n} \\ \vdots &\vdots & &\vdots &\vdots \\ a_{n1} &a_{n2} &\cdots &(a_{ni}+a{}'_{ni}) &a_{nn} \end{vmatrix}" /></a>
+
 
 **则$D$等于下列两个行列式之和**
 
 
-$$
-D = \begin{vmatrix}
-a_{11} &a_{12}  &\cdots &a_{1i}   &a_{1n} \\ 
-a_{21} &a_{22}  &\cdots &a_{2i}  &a_{2n} \\ 
-\vdots &\vdots  &   &\vdots &\vdots \\ 
-a_{n1} &a_{n2}  &\cdots  &a_{ni} &a_{nn} 
-\end{vmatrix}+\begin{vmatrix}
-a_{11} &a_{12}  &\cdots &a{}'_{1i}   &a_{1n} \\ 
-a_{21} &a_{22}  &\cdots &a{}'_{2i}  &a_{2n} \\ 
-\vdots &\vdots  &   &\vdots &\vdots \\ 
-a_{n1} &a_{n2}  &\cdots  &a{}'_{ni} &a_{nn} 
-\end{vmatrix}
-$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a_{1i}&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a_{2i}&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a_{ni}&space;&a_{nn}&space;\end{vmatrix}&plus;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a{}'_{1i}&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a{}'_{2i}&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a{}'_{ni}&space;&a_{nn}&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?D&space;=&space;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a_{1i}&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a_{2i}&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a_{ni}&space;&a_{nn}&space;\end{vmatrix}&plus;\begin{vmatrix}&space;a_{11}&space;&a_{12}&space;&\cdots&space;&a{}'_{1i}&space;&a_{1n}&space;\\&space;a_{21}&space;&a_{22}&space;&\cdots&space;&a{}'_{2i}&space;&a_{2n}&space;\\&space;\vdots&space;&\vdots&space;&&space;&\vdots&space;&\vdots&space;\\&space;a_{n1}&space;&a_{n2}&space;&\cdots&space;&a{}'_{ni}&space;&a_{nn}&space;\end{vmatrix}" title="D = \begin{vmatrix} a_{11} &a_{12} &\cdots &a_{1i} &a_{1n} \\ a_{21} &a_{22} &\cdots &a_{2i} &a_{2n} \\ \vdots &\vdots & &\vdots &\vdots \\ a_{n1} &a_{n2} &\cdots &a_{ni} &a_{nn} \end{vmatrix}+\begin{vmatrix} a_{11} &a_{12} &\cdots &a{}'_{1i} &a_{1n} \\ a_{21} &a_{22} &\cdots &a{}'_{2i} &a_{2n} \\ \vdots &\vdots & &\vdots &\vdots \\ a_{n1} &a_{n2} &\cdots &a{}'_{ni} &a_{nn} \end{vmatrix}" /></a>
 
 
 
@@ -300,15 +274,7 @@ $$
 尝试计算一下:
 
 
-$$
-\begin{vmatrix}
-3 & 1 & -1 & 2\\ 
--1 &  1&  3& -4\\ 
-2 &  0&  1& -1\\ 
-1 &  -5&  3& -3
-\end{vmatrix}
-$$
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{vmatrix}&space;3&space;&&space;1&space;&&space;-1&space;&&space;2\\&space;-1&space;&&space;1&&space;3&&space;-4\\&space;2&space;&&space;0&&space;1&&space;-1\\&space;1&space;&&space;-5&&space;3&&space;-3&space;\end{vmatrix}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{vmatrix}&space;3&space;&&space;1&space;&&space;-1&space;&&space;2\\&space;-1&space;&&space;1&&space;3&&space;-4\\&space;2&space;&&space;0&&space;1&&space;-1\\&space;1&space;&&space;-5&&space;3&&space;-3&space;\end{vmatrix}" title="\begin{vmatrix} 3 & 1 & -1 & 2\\ -1 & 1& 3& -4\\ 2 & 0& 1& -1\\ 1 & -5& 3& -3 \end{vmatrix}" /></a>
 
 
 答案：【40】
