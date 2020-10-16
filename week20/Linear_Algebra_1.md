@@ -23,6 +23,10 @@
 
 消元法解二元线性方程组，消去未知数 $x_{2}$ 
 
+![1](http://latex.codecogs.com/svg.latex?\left\{\begin{matrix}
+a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ 
+a_{21}x_{1} + a_{22}x_{2} = b_{2}
+\end{matrix}\right.)
 
 $$
 \left\{\begin{matrix}
