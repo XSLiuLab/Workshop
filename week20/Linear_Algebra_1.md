@@ -1,16 +1,4 @@
-```
-<head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [['$','$']]
-            }
-        });
-    </script>
-</head>
-```
+
 ### 参考资料：
 
 ![查看源图像](Linear_Algebra_1.assets/5a013149N8598768a.jpg)
@@ -33,6 +21,8 @@
 
 
 消元法解二元线性方程组，消去未知数 $x_{2}$ 
+
+![](http://latex.codecogs.com/gif.latex?\\sigma=\sqrt{\frac{1}{n}{\sum_{k=1}^n(x_i-\bar{x})^2}})
 
 $$
 \left\{\begin{matrix}
