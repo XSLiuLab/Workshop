@@ -1,3 +1,4 @@
+```
 <head>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
     <script type="text/x-mathjax-config">
@@ -9,7 +10,7 @@
         });
     </script>
 </head>
-
+```
 ### 参考资料：
 
 ![查看源图像](Linear_Algebra_1.assets/5a013149N8598768a.jpg)
