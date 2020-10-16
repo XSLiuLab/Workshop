@@ -22,6 +22,9 @@
 
 消元法解二元线性方程组，消去未知数 $x_{2}$ 
 
+![](http://latex.codecogs.com/gif.latex?\\sigma=\sqrt{\frac{1}{n}{\sum_{k=1}^n(x_i-\bar{x})^2}})
+![](http://latex.codecogs.com/gif.latex?\\\left\{\begin{matrix};a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ ;a_{21}x_{1} + a_{22}x_{2} = b_{2};\end{matrix}\right.)
+
 $$
 \left\{\begin{matrix}
 a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ 
