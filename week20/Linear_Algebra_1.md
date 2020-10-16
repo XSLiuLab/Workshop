@@ -32,7 +32,7 @@ a_{21}x_{1} + a_{22}x_{2} = b_{2}
 \end{matrix}\right.
 $$
 当$a_{11}a_{22}-a_{12}a_{21}\neq 0$时
-
+![](http://latex.codecogs.com/gif.latex?\\a_{11}a_{22}-a_{12}a_{21}\neq 0)
 
 $$
 x_{1} = \frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}}, \  
