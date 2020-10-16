@@ -22,9 +22,6 @@
 
 消元法解二元线性方程组，消去未知数 $x_{2}$ 
 
-![](http://latex.codecogs.com/gif.latex?\\left\{\begin{matrix}a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ a_{21}x_{1} + a_{22}x_{2} = b_{2}\end{matrix}\right.)
-![](http://latex.codecogs.com/gif.latex?\\sigma=\sqrt{\frac{1}{n}{\sum_{k=1}^n(x_2-\bar{x})^2}})
-
 $$
 \left\{\begin{matrix}
 a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ 
@@ -32,7 +29,7 @@ a_{21}x_{1} + a_{22}x_{2} = b_{2}
 \end{matrix}\right.
 $$
 当$a_{11}a_{22}-a_{12}a_{21}\neq 0$时
-![](http://latex.codecogs.com/gif.latex?\\a_{11}a_{22}-a_{12}a_{21}\neq 0)
+
 
 $$
 x_{1} = \frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}}, \  
