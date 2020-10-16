@@ -28,6 +28,7 @@
 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=x_{1}&space;=&space;\frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}},&space;\&space;x_{2}&space;=&space;\frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x_{1}&space;=&space;\frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}},&space;\&space;x_{2}&space;=&space;\frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}" title="x_{1} = \frac{b_{1}a_{22}-a_{12}b_{2}}{a_{11}a_{22}-a_{12}a_{21}}, \ x_{2} = \frac{b_{2}a_{11}-a_{21}b_{1}}{a_{11}a_{22}-a_{12}a_{21}}" /></a>
+
 二行二列的二阶行列式，记作
 
 
