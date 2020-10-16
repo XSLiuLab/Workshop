@@ -1,4 +1,14 @@
-
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
 
 ### 参考资料：
 
@@ -22,10 +32,6 @@
 
 
 消元法解二元线性方程组，消去未知数 $x_{2}$ 
-
-![1](http://latex.codecogs.com/svg.latex?\left\{\begin{matrix}a_{11}x_{1} + a_{12}x_{2} = b_{1},\\ a_{21}x_{1} + a_{22}x_{2} = b_{2}\end{matrix}\right.)
-
-![1](http://latex.codecogs.com/svg.latex?\int_a^bf(x)\ dx)
 
 $$
 \left\{\begin{matrix}
