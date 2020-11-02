@@ -26,7 +26,8 @@
 - [第十八期：R 包开发介绍](week18/R_package_development_introduction.md)（[视频](https://www.bilibili.com/video/BV1ST4y1J7Ai)）-（吴涛）
 - [第十九期：Markdown 与 RMarkdown 最佳入口](week19/markdown-rmarkdown.md)（[视频](https://www.bilibili.com/video/BV1pk4y117Ng)）-（王诗翔）
 - [第二十期：线性代数-行列式](week20/Linear_Algebra_1.md)（[视频](https://www.bilibili.com/video/BV1Ly4y1r768)）-（陶紫玉）
-- [第二十一期：SQL基础](week21/SQL基础.md)（[视频](https://www.bilibili.com/video/BV1XA411L766)）-（王轩）
+- [第二十一期：SQL 基础](week21/SQL基础.md)（[视频](https://www.bilibili.com/video/BV1XA411L766)）-（王轩）
+- [第二十二期：利用 purrr 进行迭代](week22/purrr.md)（[视频](https://www.bilibili.com/video/BV15i4y1L7qs)）-（吴涛）
 
 ***
 
