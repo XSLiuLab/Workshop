@@ -28,6 +28,7 @@
 - [第二十期：线性代数-行列式](week20/Linear_Algebra_1.md)（[视频](https://www.bilibili.com/video/BV1Ly4y1r768)）-（陶紫玉）
 - [第二十一期：SQL 基础](week21/SQL基础.md)（[视频](https://www.bilibili.com/video/BV1XA411L766)）-（王轩）
 - [第二十二期：利用 purrr 进行迭代](week22/purrr.md)（[视频](https://www.bilibili.com/video/BV15i4y1L7qs)）-（吴涛）
+- [第二十三期：利用 forcats 操作因子类型数据](week23/forcats.md)（[视频](https://www.bilibili.com/video/BV1X5411L7fF)）-（李慧敏）
 
 ***
 
