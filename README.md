@@ -29,6 +29,9 @@
 - [第二十一期：SQL 基础](week21/SQL基础.md)（[视频](https://www.bilibili.com/video/BV1XA411L766)）-（王轩）
 - [第二十二期：利用 purrr 进行迭代](week22/purrr.md)（[视频](https://www.bilibili.com/video/BV15i4y1L7qs)）-（吴涛）
 - [第二十三期：利用 forcats 操作因子类型数据](week23/forcats.md)（[视频](https://www.bilibili.com/video/BV1X5411L7fF)）-（李慧敏）
+- [第二十四期：GEO 分析简介](week24/GEO芯片分析1.md)（[视频](https://www.bilibili.com/video/BV1fK4y1Z7GQ)）-（朱堃）
+- [第二十五期：HiC 数据处理简介](week25/)（[视频](https://www.bilibili.com/video/BV13a411w7bf)）-（宁伟）
+
 
 ***
 
