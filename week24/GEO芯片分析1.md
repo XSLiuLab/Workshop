@@ -97,7 +97,6 @@ log2（treat/control）=log2（treat）-log2（control）
 
 1. R包安装
 
-
 ```r
 options("repos"="http://mirrors.ustc.edu.cn/CRAN/")
 if(!require("BiocManager")) install.packages("BiocManager",update = F,ask = F)
