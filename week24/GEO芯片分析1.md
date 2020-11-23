@@ -96,7 +96,7 @@ log2（treat/control）=log2（treat）-log2（control）
 ![image.png](.\pictures\image (16).png)
 
 1. R包安装
-```r
+```{r}
 options("repos"="http://mirrors.ustc.edu.cn/CRAN/")
 if(!require("BiocManager")) install.packages("BiocManager",update = F,ask = F)
 options(BioC_mirror="https://mirrors.ustc.edu.cn/bioc/")
