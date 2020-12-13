@@ -18,11 +18,11 @@
 - [第十期：聚类](week10/cluster.md)（[视频](https://www.bilibili.com/video/BV1Bh411o77W)）-（吴涛）
 - [第十一期：降维](week11/降维.md)（[视频](https://www.bilibili.com/video/BV1LC4y1873N)）-（陶紫玉）
 - [第十二期：基因富集分析](week12/基因富集分析.md)（[视频](https://www.bilibili.com/video/BV1Yt4y1D7tG)）-（王轩）
-- [第十三期：统计检验与多重矫正](week13/统计检验与多重矫正.md)（[视频](https://www.bilibili.com/video/BV1gA411n71B)）-（李惠敏）
+- [第十三期：统计检验与多重矫正](week13/统计检验与多重矫正.md)（[视频](https://www.bilibili.com/video/BV1gA411n71B)）-（李慧敏）
 - [第十四期：线性回归](week14/linear_regression_analysis.md)（[视频](https://www.bilibili.com/video/BV1254y1e7LD)）-（吴涛）
 - [第十五期：热图](week15/热图workshop.md)（[视频](https://www.bilibili.com/video/BV1Pa4y1E7WS)）-（陶紫玉）
 - [第十六期：Pandas 库介绍](week16/Pandas.md)（[视频](https://www.bilibili.com/video/BV1fz4y1o7jh)）-（王轩）
-- [第十七期：奇异值分解](week17/奇异值分解.md)（[视频](https://www.bilibili.com/video/BV19A411E7KJ)）-（李惠敏）
+- [第十七期：奇异值分解](week17/奇异值分解.md)（[视频](https://www.bilibili.com/video/BV19A411E7KJ)）-（李慧敏）
 - [第十八期：R 包开发介绍](week18/R_package_development_introduction.md)（[视频](https://www.bilibili.com/video/BV1ST4y1J7Ai)）-（吴涛）
 - [第十九期：Markdown 与 RMarkdown 最佳入口](week19/markdown-rmarkdown.md)（[视频](https://www.bilibili.com/video/BV1pk4y117Ng)）-（王诗翔）
 - [第二十期：线性代数-行列式](week20/Linear_Algebra_1.md)（[视频](https://www.bilibili.com/video/BV1Ly4y1r768)）-（陶紫玉）
