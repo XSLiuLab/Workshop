@@ -33,6 +33,7 @@
 - [第二十五期：HiC 数据处理简介](week25/Hic数据介绍及处理.md)（[视频](https://www.bilibili.com/video/BV13a411w7bf)）-（宁伟）
 - [第二十六期：随机森林](week26/randomforest.md)（[视频](https://www.bilibili.com/video/BV1wa4y1W7J1)）-（陶紫玉）
 - [第二十七期：用 Python 构建网络爬虫](week27/用Python构建网络爬虫.md)（[视频](https://www.bilibili.com/video/BV1M64y1f7xr)）-（王轩）
+- [第二十八期：用 Pytorch 构建神经网络 overview](week28/overview.md)（[视频]()）-（李慧敏）
 
 
 ***
