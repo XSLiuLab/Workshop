@@ -35,7 +35,8 @@
 - [第二十七期：用 Python 构建网络爬虫](week27/用Python构建网络爬虫.md)（[视频](https://www.bilibili.com/video/BV1M64y1f7xr)）-（王轩）
 - [第二十八期：用 Pytorch 构建神经网络 overview](week28/overview.md)（[视频](https://www.bilibili.com/video/BV1Vv411b7Z9)）-（李慧敏）
 - [第二十九期：深度学习入门](week29/深度学习入门.md)（[视频](https://www.bilibili.com/video/BV1NK411g7HW)）-（吴涛）
-
+- [第三十期：GEO 分析简介 2](week30/GEO芯片数据分析2.md)（[视频](https://www.bilibili.com/video/BV11t4y1r7mU)）-（朱堃）
+- [第三十期：driver突变识别简介](week30/文档.md)（[视频](https://www.bilibili.com/video/BV1JA411W7LJ)）-（宁伟）
 
 ***
 
