@@ -4,6 +4,8 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/XSLiuLab/Workshop/graphs/commit-activity)
 [![HitCount](http://hits.dwyl.com/XSLiuLab/Workshop.svg)](http://hits.dwyl.com/XSLiuLab/Workshop)
 
+GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
+
 所有 Markdown 文档推荐使用 [Typora](https://typora.io/) 阅读。
 
 - [第一期：我理解的生信核心要点](week1/第一周.md)（[视频](https://www.bilibili.com/video/BV16K4y1t7VD)）-（王诗翔）
@@ -40,4 +42,4 @@
 - [第三十二期：eQTL](week32/eqtl计算方法.md)（[视频](https://www.bilibili.com/video/BV1Kv4y1f7g3)）-（王光帅）
 ***
 
-GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
+
