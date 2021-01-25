@@ -184,7 +184,7 @@ ROC threshold for AUC calculation默认设定是3%
 
 
 
-（2）以转录因子TP63为例，可以选择一个数据库，也可以同时选择多个数据库。
+（2）预测转录因子TP63下游靶标基因，可以选择一个数据库，也可以同时选择多个数据库。
 
 ![image-20210120190444917](https://i.loli.net/2021/01/21/HPM3VciaJjf4Fzk.png)
 
