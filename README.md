@@ -40,6 +40,8 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 - [第三十期：GEO 分析简介 2](week30/GEO芯片数据分析2.md)（[视频](https://www.bilibili.com/video/BV11t4y1r7mU)）-（朱堃）
 - [第三十一期：driver突变识别简介](week31/文档.md)（[视频](https://www.bilibili.com/video/BV1JA411W7LJ)）-（宁伟）
 - [第三十二期：eQTL](week32/eqtl计算方法.md)（[视频](https://www.bilibili.com/video/BV1Kv4y1f7g3)）-（王光帅）
+- [第三十三期：用iRegulon进行主转录因子的预测](week33/Week33.md)（[视频](https://www.bilibili.com/video/BV1nV411q7qD)）-（吴宸旭）
+- [第三十四期：使用GenomicRanges处理基因组坐标区间](week34/GenomicRanges.md)（[视频](https://www.bilibili.com/video/BV1Ev411e7oH)）-（吴涛）
 ***
 
 
