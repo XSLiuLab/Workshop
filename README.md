@@ -4,6 +4,8 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/XSLiuLab/Workshop/graphs/commit-activity)
 [![HitCount](http://hits.dwyl.com/XSLiuLab/Workshop.svg)](http://hits.dwyl.com/XSLiuLab/Workshop)
 
+GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
+
 所有 Markdown 文档推荐使用 [Typora](https://typora.io/) 阅读。
 
 - [第一期：我理解的生信核心要点](week1/第一周.md)（[视频](https://www.bilibili.com/video/BV16K4y1t7VD)）-（王诗翔）
@@ -18,11 +20,11 @@
 - [第十期：聚类](week10/cluster.md)（[视频](https://www.bilibili.com/video/BV1Bh411o77W)）-（吴涛）
 - [第十一期：降维](week11/降维.md)（[视频](https://www.bilibili.com/video/BV1LC4y1873N)）-（陶紫玉）
 - [第十二期：基因富集分析](week12/基因富集分析.md)（[视频](https://www.bilibili.com/video/BV1Yt4y1D7tG)）-（王轩）
-- [第十三期：统计检验与多重矫正](week13/统计检验与多重矫正.md)（[视频](https://www.bilibili.com/video/BV1gA411n71B)）-（李惠敏）
+- [第十三期：统计检验与多重矫正](week13/统计检验与多重矫正.md)（[视频](https://www.bilibili.com/video/BV1gA411n71B)）-（李慧敏）
 - [第十四期：线性回归](week14/linear_regression_analysis.md)（[视频](https://www.bilibili.com/video/BV1254y1e7LD)）-（吴涛）
 - [第十五期：热图](week15/热图workshop.md)（[视频](https://www.bilibili.com/video/BV1Pa4y1E7WS)）-（陶紫玉）
 - [第十六期：Pandas 库介绍](week16/Pandas.md)（[视频](https://www.bilibili.com/video/BV1fz4y1o7jh)）-（王轩）
-- [第十七期：奇异值分解](week17/奇异值分解.md)（[视频](https://www.bilibili.com/video/BV19A411E7KJ)）-（李惠敏）
+- [第十七期：奇异值分解](week17/奇异值分解.md)（[视频](https://www.bilibili.com/video/BV19A411E7KJ)）-（李慧敏）
 - [第十八期：R 包开发介绍](week18/R_package_development_introduction.md)（[视频](https://www.bilibili.com/video/BV1ST4y1J7Ai)）-（吴涛）
 - [第十九期：Markdown 与 RMarkdown 最佳入口](week19/markdown-rmarkdown.md)（[视频](https://www.bilibili.com/video/BV1pk4y117Ng)）-（王诗翔）
 - [第二十期：线性代数-行列式](week20/Linear_Algebra_1.md)（[视频](https://www.bilibili.com/video/BV1Ly4y1r768)）-（陶紫玉）
@@ -32,8 +34,14 @@
 - [第二十四期：GEO 分析简介](week24/GEO芯片分析1.md)（[视频](https://www.bilibili.com/video/BV1fK4y1Z7GQ)）-（朱堃）
 - [第二十五期：HiC 数据处理简介](week25/Hic数据介绍及处理.md)（[视频](https://www.bilibili.com/video/BV13a411w7bf)）-（宁伟）
 - [第二十六期：随机森林](week26/randomforest.md)（[视频](https://www.bilibili.com/video/BV1wa4y1W7J1)）-（陶紫玉）
-
-
+- [第二十七期：用 Python 构建网络爬虫](week27/用Python构建网络爬虫.md)（[视频](https://www.bilibili.com/video/BV1M64y1f7xr)）-（王轩）
+- [第二十八期：用 Pytorch 构建神经网络 overview](week28/overview.md)（[视频](https://www.bilibili.com/video/BV1Vv411b7Z9)）-（李慧敏）
+- [第二十九期：深度学习入门](week29/深度学习入门.md)（[视频](https://www.bilibili.com/video/BV1NK411g7HW)）-（吴涛）
+- [第三十期：GEO 分析简介 2](week30/GEO芯片数据分析2.md)（[视频](https://www.bilibili.com/video/BV11t4y1r7mU)）-（朱堃）
+- [第三十一期：driver突变识别简介](week31/文档.md)（[视频](https://www.bilibili.com/video/BV1JA411W7LJ)）-（宁伟）
+- [第三十二期：eQTL](week32/eqtl计算方法.md)（[视频](https://www.bilibili.com/video/BV1Kv4y1f7g3)）-（王光帅）
+- [第三十三期：用iRegulon进行主转录因子的预测](week33/Week33.md)（[视频](https://www.bilibili.com/video/BV1nV411q7qD)）-（吴宸旭）
+- [第三十四期：使用GenomicRanges处理基因组坐标区间](week34/GenomicRanges.md)（[视频](https://www.bilibili.com/video/BV1Ev411e7oH)）-（吴涛）
 ***
 
-GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
+
