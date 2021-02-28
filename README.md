@@ -34,7 +34,7 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 - [第二十四期：GEO 分析简介](week24/GEO芯片分析1.md)（[视频](https://www.bilibili.com/video/BV1fK4y1Z7GQ)）-（朱堃）
 - [第二十五期：HiC 数据处理简介](week25/Hic数据介绍及处理.md)（[视频](https://www.bilibili.com/video/BV13a411w7bf)）-（宁伟）
 - [第二十六期：随机森林](week26/randomforest.md)（[视频](https://www.bilibili.com/video/BV1wa4y1W7J1)）-（陶紫玉）
-- [第二十七期：用 Python 构建网络爬虫](week27/用Python构建网络爬虫.md)（[视频](https://www.bilibili.com/video/BV1M64y1f7xr)）-（王轩）
+- [第二十七期：用 Python 构建网络爬虫(一)](week27/用Python构建网络爬虫.md)（[视频](https://www.bilibili.com/video/BV1M64y1f7xr)）-（王轩）
 - [第二十八期：用 Pytorch 构建神经网络 overview](week28/overview.md)（[视频](https://www.bilibili.com/video/BV1Vv411b7Z9)）-（李慧敏）
 - [第二十九期：深度学习入门](week29/深度学习入门.md)（[视频](https://www.bilibili.com/video/BV1NK411g7HW)）-（吴涛）
 - [第三十期：GEO 分析简介 2](week30/GEO芯片数据分析2.md)（[视频](https://www.bilibili.com/video/BV11t4y1r7mU)）-（朱堃）
@@ -42,6 +42,7 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 - [第三十二期：eQTL](week32/eqtl计算方法.md)（[视频](https://www.bilibili.com/video/BV1Kv4y1f7g3)）-（王光帅）
 - [第三十三期：用iRegulon进行主转录因子的预测](week33/Week33.md)（[视频](https://www.bilibili.com/video/BV1nV411q7qD)）-（吴宸旭）
 - [第三十四期：使用GenomicRanges处理基因组坐标区间](week34/GenomicRanges.md)（[视频](https://www.bilibili.com/video/BV1Ev411e7oH)）-（吴涛）
+- [第三十五期：python爬虫(二)](week35/爬虫(二).md)（[视频](https://www.bilibili.com/video/BV1Ev411e7oH)）-（王轩）
 ***
 
 
