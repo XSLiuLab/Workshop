@@ -269,6 +269,58 @@ Jones et al. (1990)
 ```
 
 ### 3. 表格的制作
+
+分为以下两个部分：
+- 手动输入表格（适合小型表格）
+- 其他工具进行表格转换
+1. Excel中的表格
+
+可以在Excel中使用插件：**Excel2Latex**，该插件能够将Excel表格转化为LaTex的表格形式。
+
+2. Word中的表格
+
+可以使用pandoc直接转换为`.tex`格式，不过转换之后不是完美的，可能需要手动调整一下。
+
+示例：
+```powershell
+pandoc test.docx -o test.tex
+```
+
+3. 其他文件形式的表格
+
+比如在R当中得到的表格，可以使用`stargazer`包把结果输出为LaTex格式，或者`xtable`包。
+
+以`xtable`包为例：
+```R
+> install.packages("xtable") #安装xtable
+> library(xtable) #载入
+> data(iris) # 示例数据
+> xtable(head(iris),digits=3,caption="Head of Iris Data")
+#将iris数据前6行
+# 保留三位小数
+#标题设为"Head of Iris Data"，导出为LaTex格式
+% latex table generated in R 4.0.2 by xtable 1.8-4 package
+% Sat Mar  6 20:04:47 2021
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrrl}
+  \hline
+ & Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species \\ 
+  \hline
+1 & 5.100 & 3.500 & 1.400 & 0.200 & setosa \\ 
+  2 & 4.900 & 3.000 & 1.400 & 0.200 & setosa \\ 
+  3 & 4.700 & 3.200 & 1.300 & 0.200 & setosa \\ 
+  4 & 4.600 & 3.100 & 1.500 & 0.200 & setosa \\ 
+  5 & 5.000 & 3.600 & 1.400 & 0.200 & setosa \\ 
+  6 & 5.400 & 3.900 & 1.700 & 0.400 & setosa \\ 
+   \hline
+\end{tabular}
+\caption{Head of Iris Data} 
+\end{table}
+```
+
+#### 表格的介绍
+
 表格的基本格式和要素如下（2行2列表格）：
 
 
