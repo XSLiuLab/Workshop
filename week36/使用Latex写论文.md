@@ -462,5 +462,6 @@ There's a picture of a galaxy above
 - [<font color=blue>LaTex插入图形，表格</font>](https://blog.csdn.net/miracle_fans/article/details/78233304)
 - [<font color=blue>LaTeX排版札记</font>](https://zhuanlan.zhihu.com/p/32925549)
 
-
+- [<font color=blue>用R语言快速生成Latex表格</font>](https://blog.csdn.net/joshua_hit/article/details/60608787)
+- [<font color=blue>LaTeX高效写作系列：word表格转LaTeX</font>](https://www.jianshu.com/p/60de8893f731)
 
