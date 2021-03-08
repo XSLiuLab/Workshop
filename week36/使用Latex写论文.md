@@ -4,7 +4,7 @@
 +++
 
 ## 前言
-最近写文章的时候，发现修改时调整参考文献的引用，是一件非常麻烦的事情，于是找到了一种简便的方法进行调整，发现了用Latex写论文原来这么好用（据涛哥和翔哥说，word也可以自动调整引用文献顺序，而我一直不知道...）。
+最近写文章的时候，发现修改时调整参考文献的引用，是一件非常麻烦的事情，于是找到了一种简便的方法进行调整，发现了用Latex写论文原来这么好用。
 <!--more-->
 
 
@@ -17,7 +17,7 @@
 - 图片表格的插入
 
 ## 使用的工具
-- Oneleaf —— Online LaTeX Editor（推荐）
+- Overleaf —— Online LaTeX Editor（推荐）
 
 优点：不用本地搭建环境；在线编辑并渲染；部分投稿期刊直接提供链接模板。
 - MacTeX—— For mac
@@ -49,7 +49,7 @@ extra parameters or packages included.
 \documentclass[12pt, letterpaper]{article} %设置
 \usepackage[utf8]{inputenc} %加载了名叫inputenc的宏包，设置使用utf-8来编码。
 ```
-在`[]`方括号中都是一些参数的选择，**documentclass**中设置了字体大小为12pt（默认的字体大小是10pt），纸张大小为信纸，其他的设置可以看[<font color=blue>Oneleaf的文档说明</font>](https://www.overleaf.com/learn/latex/Page_size_and_margins)。
+在`[]`方括号中都是一些参数的选择，**documentclass**中设置了字体大小为12pt（默认的字体大小是10pt），纸张大小为信纸，其他的设置可以看[<font color=blue>Overleaf的文档说明</font>](https://www.overleaf.com/learn/latex/Page_size_and_margins)。
 
 这些内容也属于preamble：
 
@@ -89,12 +89,12 @@ were made by \textbf{\textit{accident}}. %斜体
 
 还有更多的字体变换可以更改，具体参考[<font color=blue>字体格式</font>](https://www.overleaf.com/learn/latex/Bold,_italics_and_underlining)，来个简单的应用示例感受一下它的实用性。
 
-## Oneleaf 示例
+## Overleaf 示例
 ### 1. 模板的使用
 
-#### 进入 [<font color=blue>Oneleaf模板</font>](https://www.overleaf.com/latex/templates)，选择合适的模板
+#### 进入 [<font color=blue>Overleaf模板</font>](https://www.overleaf.com/latex/templates)，选择合适的模板
 
-这其中包括[<font color=blue>国科大的毕业论文模板</font>](https://www.overleaf.com/latex/templates/thesis-template-for-the-university-of-chinese-academy-of-sciences/fhbvbjrrgtwx)、[<font color=blue>开题报告模板</font>](https://www.overleaf.com/latex/templates/research-proposal-template-for-ucas/tcjqfcxgsbfr)，以及各种杂志期刊、简历、信件、海报、报告、作业和写书的模板等等（部分期刊杂志会提供Oneleaf的模板）。
+这其中包括[<font color=blue>国科大的毕业论文模板</font>](https://www.overleaf.com/latex/templates/thesis-template-for-the-university-of-chinese-academy-of-sciences/fhbvbjrrgtwx)、[<font color=blue>开题报告模板</font>](https://www.overleaf.com/latex/templates/research-proposal-template-for-ucas/tcjqfcxgsbfr)，以及各种杂志期刊、简历、信件、海报、报告、作业和写书的模板等等（部分期刊杂志会提供Overleaf的模板）。
 <center class="half">
     <img src="https://i.loli.net/2021/03/05/SoAgT5dBGfaK3Y1.png" width="400"/>
     <img src="https://i.loli.net/2021/03/05/osz41c38kgprZf6.png" width="400"/>
@@ -454,7 +454,7 @@ There's a picture of a galaxy above
 
 
 ## 参考资料
-- [<font color=blue>Oneleaf官方文档</font>](https://www.overleaf.com/learn)
+- [<font color=blue>Overleaf官方文档</font>](https://www.overleaf.com/learn)
 - [<font color=blue>BibTex的使用方法</font>](https://www.cnblogs.com/parrynee/archive/2010/03/02/1676369.html)
 - [<font color=blue>latex documentclass 及相关布局</font>](https://blog.csdn.net/wei_love_2017/article/details/86617235)
 - [<font color=blue>document class</font>](https://latexref.xyz/Document-class-options.html)
