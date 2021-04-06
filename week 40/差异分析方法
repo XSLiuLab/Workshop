@@ -226,11 +226,13 @@ wilcox.test(mpg~am,data = mtcars)
 
 三种包的区别：
 
-​             1.limma包做差异分析要求数据满足正态分布或近似正态分布，如基因芯片、TPM格式的高通量测序数据。
+              1.limma包做差异分析要求数据满足正态分布或近似正态分布，如基因芯片、TPM格式的高通量测序数据。
+              2.通常认为Count数据不符合正态分布而服从泊松分布。对于count数据来说，用limma包做差异分析，误差较大
+              3.DESeq2、和 EdgeR都是基于count，然后两个都是NB（negative binomial）但是在估计dispersion parameter的方法上面不一样。
+              4.limma，edgeR，DESeq2三大包基本是做转录组差异分析的金标准，大多数转录组的文章都是用这三个R包进行差异分析。
+              5.edgeR差异分析速度快，得到的基因数目比较多，假阳性高（实际不差异，结果差异）。DESeq2差异分析速度慢，得到的基因数目比较少，假阴性高（实际差异，结果不差异）。
+              6.需要注意的是制作分组信息的因子向量是，因子水平的前后顺序，在R的很多模型中，默认将因子向量的第一个水平看作对照组
 
-​             2.通常认为Count数据不符合正态分布而服从泊松分布。对于count数据来说，用limma包做差异分析，误差较大
-
-​             3.DESeq2、和 EdgeR都是基于count，然后两个都是NB（negative binomial）但是在估计dispersion parameter的方法上面不一样。
 
 如果数据量大并且要求比较conservative的话可以所有方法都用下，然后取并集。
 
@@ -336,3 +338,5 @@ limma,DEseq2的代码实现可以在https://blog.csdn.net/weixin_43700050/articl
 4.https://blog.csdn.net/u010608296/article/details/114135253?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.control&dist_request_id=1328761.11124.16172439205851981&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-2.control.edgeR/limma/DESeq2
 
 5.https://www.jianshu.com/p/17ae5bee7bb0
+
+6.https://www.jianshu.com/p/517167c50a5f
