@@ -1,0 +1,237 @@
+# sigprofiler的安装与使用
+
+------
+
+SigProfiler提供了一套完整的生物信息学工具来进行突变特征分析。该软件涵盖了分析流程，从生成突变矩阵开始，到完成特征提取，以及绘图和模拟的支持功能.也已经有工具把这些功能都整合到一块，比如sigminer,使用起来更加方便。
+
+![image-20210714102414238](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210714102425.png)
+
+它总共分为四个工具：
+
+SigProfilerMatrixGenerator ：为所有类型的体细胞突变创建突变矩阵。
+
+SigProfilerExtractor ：允许从头提取突变特征，识别操作特征的数量、它们的活动和它们导致特定突变类型的概率。
+
+SigProfilerSimulator ：允许对癌症基因组中的突变模式和突变特征进行真实的模拟。该工具可用于模拟SBS、DBS和ID签名。
+
+SigProfilerPlotting ：提供了一个标准工具，用于显示癌症基因组中所有类型的突变特征以及所有类型的突变模式。
+
+## SigProfilerMatrixGenerator 
+
+### 安装
+
+------
+
+![image-20210714163153128](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210714163154.png)
+
+以上就是它的几个依赖，Reference genomes可以先不用安装，可以通过 pip 实现 pandas、Wget 和 SigProfilerPlotting 的单独安装。
+
+等所有依赖安装好后,直接使用pip安装。
+
+~~~python
+ pip install SigProfilerMatrixGenerator
+~~~
+
+在使用 SigProfilerMatrixGenerator 工具之前，需要安装参考基因组文件。  从命令行安装所需的参考基因组，如下所示：
+
+~~~python
+$ python3
+>> from SigProfilerMatrixGenerator import install as genInstall
+>> genInstall.install('GRCh37', bash=True)
+~~~
+
+![image-20210726163130971](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210726163132.png)
+
+虽然说官方也有R的安装程序，但其实还是调用的python程序，所以我推荐直接用python。这里就不再介绍R的安装步骤，有兴趣的话可以去https://osf.io/s93d5/wiki/2.%20Installation%20-%20R/看看。
+
+### 使用
+
+------
+
+###### 输入
+
+![image-20210726155335962](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210726155345.png)
+
+###### ICGC_example
+
+![image-20210726155430069](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210726155432.png)
+
+###### 首先需要新建目录：
+
+![enter image description here](https://files.osf.io/v1/resources/s93d5/providers/osfstorage/5c74312f82a3950017d11ff5?mode=render)
+
+![enter image description here](https://files.osf.io/v1/resources/s93d5/providers/osfstorage/5c74320162c82a0019db475f?mode=render)
+
+###### code
+
+~~~python
+python3
+>>from SigProfilerMatrixGenerator.scripts import SigProfilerMatrixGeneratorFunc as matGen
+>>matrices = matGen.SigProfilerMatrixGeneratorFunc(project, genome, vcfFiles, exome=False, bed_file=None, chrom_based=False, plot=False, tsb_stat=False, seqInfo=False)
+~~~
+
+###### 必须参数：
+
+**project :**就是你的输入文件名; 如"BRCA"
+
+**genome:**你的参考基因组；如"GRCh37"
+
+**vcfFiles:**刚刚新建目录的路径;如 "~/MatrixTest/"
+
+###### 可选参数：
+
+**exome：**把生成的矩阵下采样到基因组的外显子区域。
+
+**bed_file：**将突变矩阵下采样到基因组的自定义区域。  需要 BED 文件的完整路径。
+
+**chrom_based：**输出基于染色体的矩阵
+
+**plot：**与 SigProfilerPlotting 集成以输出每个矩阵的所有可用可视化。
+
+**tsb_stat：**输出各个矩阵的转录链偏差测试的结果。
+
+**seqInfo:**将原始突变输出到包含每个突变的 SigProfilerMatrixGenerator 分类的文本文件中。
+
+###### 输出
+
+![enter image description here](https://files.osf.io/v1/resources/s93d5/providers/osfstorage/5cc6a29c00a81000175b5de5?mode=render)
+
+![](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210726163550.png)
+
+TSB
+
+T：转录  该变体位于转录链上。  
+
+U：未转录  该变体位于未转录的链上。 
+
+ B：双向  该变体在两条链上并且以任一方式转录。 
+
+ N：非转录  该变体位于非编码区且未翻译。
+
+![image-20210726164603742](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210726164606.png)
+
+## SigProfilerExtractor 
+
+------
+
+![image-20210726165018082](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210726165019.png)
+
+安装
+
+~~~python
+pip install SigProfilerExtractor
+~~~
+
+使用
+
+~~~python
+$ python3
+>> from SigProfilerExtractor import sigpro as sig
+>> sig.sigProfilerExtractor("vcf", "results", "path/to/21BRCA_vcf", genome_build="GRCh37", minimum_signatures=1, maximum_signatures=10, nmf_replicates=100)
+>>> sig.sigProfilerExtractor("matrix", "results", "path/to/21BRCA.txt", reference_genome="GRCh37", minimum_signatures=1, maximum_signatures=10, nmf_replicates=100, cpu=-1)
+~~~
+
+详细参数：
+
+**datatype：**"matrix" or "vcf"
+
+**output_put:**  输出文件夹的名称。  输出文件夹将在当前工作目录中生成。
+
+**input_data：**对于vcf文件，是所在的文件夹名；对于matrix文件，是文件名
+
+**reference_genome：**参考基因组的名称。  有效值包括以下之一：“GRCh37”、“GRCh38”、“mm9”、“mm10”。  默认参考基因组是“GRCh37”。  此参数仅在 input_type 为“vcf”时适用
+
+**opportunity_genome：**参考基因组的参考签名的构建或版本。  有效值包括以下之一：“GRCh37”、“GRCh38”、“mm9”、“mm10”。  默认的机会基因组是  GRCh37。  如果 input_type 是“vcf”，genome_build 会自动匹配输入的参考基因组值。
+
+**context_type：**一串由逗号 (",") 分隔的突变上下文名称/名称。  列表中的项目定义了签名提取要考虑的突变上下文。   默认值为“96,DINUC,ID”，其中“96”为 SBS96 上下文，“DINUC”为 DINUCLEOTIDE 上下文，ID 为 INDEL 上下文。   其他有效上下文包括：“SBS96”、“SBS288”、“SBS1536”、“DBS78”、“ID83”、“CNV48”、“SV32”。
+
+**exome：**定义是否提取外显子组。  默认值为“false”。
+
+**minimum_signatures:**  最小签名数
+
+**maximum_signatures:**  最大签名数
+
+**nmf_replicates：**为提取每个数字签名而执行的迭代次数。  默认值为 500。
+
+**cpu：**用于提取签名的处理器数量。  默认值为 -1，这将使用所有可用的处理器。
+
+**gpu:**  定义是否在可用时使用 GPU 资源。  默认值为false。  如果为 True，将在计算中使用 GPU 资源。
+
+输出：
+
+![OutputHierarchy](https://osf.io/p4cfj/download)
+
+![File structure overview](https://osf.io/rz3ue/download)
+
+![image-20210727155601211](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210727155603.png)
+
+该文件包含平均样本余弦距离和平均稳定性之间的图。  垂直灰色条表示 SigProfilerExtractor 选择的最佳签名数量。
+
+![image-20210727155711154](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210727155719.png)
+
+![image-20210727160300774](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210727160303.png)
+
+![image-20210727160320817](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210727160322.png)
+
+## sigprofilersimulator
+
+------
+
+SigProfilerSimulator 模拟癌症中的突变特征。  它允许对单点突变、双点突变和插入/删除进行真实模拟，目的是为统计分析提供背景模型。  模拟以无偏见的方式进行，依赖于随机机会作为主要分布，并且可以在整个基因组中进行或仅限于用户提供的范围。
+
+![img](https://mfr.osf.io/export?url=https://osf.io/9br48/download/?action=download%26mode=render&initialWidth=1090&childId=__markdown-it-atrules-0&parentTitle=OSF+%7C+SigProfilerSimulator+Wiki&parentUrl=https://osf.io/usxjz/wiki/2.%2520Simulations/&format=2400x2400.jpeg)
+
+![img](https://mfr.osf.io/export?url=https://osf.io/6xqbv/download/?action=download%26mode=render&initialWidth=1090&childId=__markdown-it-atrules-1&parentTitle=OSF+%7C+SigProfilerSimulator+Wiki&parentUrl=https://osf.io/usxjz/wiki/2.%2520Simulations/&format=2400x2400.jpeg)
+
+安装
+
+~~~python
+pip3 install fastrand
+pip3 install wget
+pip3 install SigProfilerSimulator
+~~~
+
+运行
+
+~~~python
+$ python3
+>> from SigProfilerSimulator import SigProfilerSimulator as sigSim
+>> sigSim.SigProfilerSimulator(project, project_path, genome, contexts, exome, simulations, updating, bed_file, overlap, gender, chrom_based, seed_file, noisePoisson, noiseAWGN, cushion, region, vcf, mask)
+~~~
+
+必须参数
+
+**project:**   项目名称。
+
+**project_path:**  项目路径
+
+**genome:**  用于模拟的参考基因组。  当前支持的默认版本包括 {'GRCH37'、'GRCH38'、'MM9'、'MM10'、'rn6'、'yeast'}。
+
+**context:**  你想要运行的模拟。  可接受的上下文包括 {'6'、'24'、'96'、'384'、'1536'、'6144'、'DBS'、'DBS186'、'ID'、'ID415'}。
+
+可选参数
+
+**exome:** 仅在给定外显子组文件中存在的区域内进行模拟。  
+
+**simulations:**  在每个样本上运行的迭代次数。  默认情况下，该工具将对每个样本执行 1 次迭代。
+
+**updating:**  在每个突变产生后更新染色体。  默认情况下，这设置为 False
+
+**gender：**样本的性别。  可接受的输入包括 {'male', 'female'}。  默认情况下，该工具模拟“female”基因组。
+
+**overlap：**允许沿染色体的突变重叠。  默认值为false
+
+**vcf :**  为 True 时将结果导出到 VCF 文件中。  默认情况下，该工具将模拟的突变输出到 maf 文件中。
+
+输入：
+
+![image-20210727205234075](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210727205236.png)
+
+simple Text
+
+![image-20210727205313451](https://ningwei-1304664932.cos.ap-shanghai.myqcloud.com/20210727205316.png)
+
+输出：
+
+![img](https://mfr.osf.io/export?url=https://osf.io/6pkxy/download/?action=download%26mode=render&initialWidth=1090&childId=__markdown-it-atrules-2&parentTitle=OSF+%7C+SigProfilerSimulator+Wiki&parentUrl=https://osf.io/usxjz/wiki/2.%2520Simulations/&format=2400x2400.jpeg)
+
