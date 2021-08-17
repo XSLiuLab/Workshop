@@ -1,0 +1,80 @@
+# 21.7.16
+
+# 交叉验证
+
+简答的来说，交叉验证是在机器学习中用来评估和选择模型的一种统计学方法，用来判断对于同一训练集上的不同模型的好坏。
+
+首先最开始要分清训练集（train dataset），验证集（validation dataset）与测试集（test dataset）这三个概念。这里我在不同的地方看到的概念是有差别的（包括文献中）。
+
+
+
+![](http://bucket-1302043122.cossh.myqcloud.com/image.png)
+
+
+![](http://bucket-1302043122.cossh.myqcloud.com/image_1.png)
+
+
+首先我们知道，在训练模型时将训练集数据代入，调节模型的超参数，再用测试集来验证模型的准确率。而我们拥有多种模型和多个超参数可以调节，我们想知道那个是效果最好的。所以这里也需要测试集进行验证。
+
+而我们的test dataset只能使用一次。这里我的理解是，如果我们多次使用test dataset，其实是在让模型更好的模拟这一个数据集，最终导致的结果一定是过拟合。
+
+因此，我们需要在训练集中分出一部分数据来验证模型的准确率，再对超参数等进行调整。
+
+所以上述的总体思路是，在分出训练集，测试集，验证集之后，我们通过训练集和验证集来挑出准确率最高，或者说最优的超参数组合。然后使用得到的超参数组合，将训练集和测试集合并后再次训练，最后再在测试集上测试获得最终的准确率。
+
+但上面这种操作是有局限性的，就是在数据量较少时，不同的测试集和验证集的划分可能会导致最优的超参数组合发生变化，即他的差异较大。
+
+因此，这里提出了cross validation，来降低差异带来的影响。
+
+## k-flod交叉验证
+
+![](http://bucket-1302043122.cossh.myqcloud.com/image_2.png)
+
+图中所示的是5折交叉验证，整体的操作思路是，将训练集的分为5份，将其中的一份用来训练，剩下的四份用于验证，并且保证每一份的被用于训练和验证，这里我们可以根据特定超参组合获得5个acc值，可以通过取平均的方式来判断哪种超参组合能获得更高的acc值。这里的K=5。所以K-flod则是将测试集分为k份，其中的k-1份用于训练，1份用于验证。
+
+当k=n，即k与训练集的数量相等，被称为留一交叉验证。
+
+```Python
+#代码实现
+pip install -U scikit-learn
+import numpy as np
+from sklearn.model_selection import Kflod
+X = np.array([[1, 2], [3, 4], [5, 6], [7, 8],[9,10]])
+Y = np.array([1,2,3,4,5])
+for train_index ,val_index in KFold(n_splits=5).split(X):
+  print("Train",train_index,"val",val_index)
+  X_train,X_val = X[train_index],X[val_index]
+  Y_train,Y_val = Y[train_indax],Y[val_index]
+
+
+```
+
+
+# one-hot code
+
+又称为一位有效编码，主要是采用N位状态寄存器来对N个状态进行编码，每个状态都由他独立的寄存器位，并且在任意时候只有一位有效。
+
+简单的来说，他有多少个状态就有多少个比特，而且只有一个位是1，其他位置是0。
+
+
+
+![](http://bucket-1302043122.cossh.myqcloud.com/image_3.png)
+
+
+![](http://bucket-1302043122.cossh.myqcloud.com/image_4.png)
+
+举例来说，可以从上图看出，对于食品名称，采用标签编码时，我们可以根据食品的数量从1编码到N，而对于onehotcode，我们需要一个N维的向量，某一位的1代表食品的种类，而其他的全为0。
+
+```Python
+from sklearn import preprocessing
+import numpy as np
+
+enc = preprocessing.OneHotEncoder()
+X = [['male', 'from US', 'uses Safari'], ['female', 'from Europe', 'uses Firefox']]
+enc.fit(X)
+enc.transform([['female', 'from US', 'uses Safari'],['male', 'from Europe', 'uses Safari']]).toarray()
+
+```
+
+
+
