@@ -2,7 +2,7 @@
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/XSLiuLab/Workshop/graphs/commit-activity)
-[![HitCount](http://hits.dwyl.com/XSLiuLab/Workshop.svg)](http://hits.dwyl.com/XSLiuLab/Workshop)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FXSLiuLab%2FWorkshop&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 
