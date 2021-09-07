@@ -43,6 +43,13 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 - [第三十三期：用iRegulon进行主转录因子的预测](week33/Week33.md)（[视频](https://www.bilibili.com/video/BV1nV411q7qD)）-（吴宸旭）
 - [第三十四期：使用GenomicRanges处理基因组坐标区间](week34/GenomicRanges.md)（[视频](https://www.bilibili.com/video/BV1Ev411e7oH)）-（吴涛）
 - [第三十五期：python爬虫(二)](week35/爬虫(二).md)（[视频](https://www.bilibili.com/video/BV1nf4y167CZ)）-（王轩）
-***
-
-
+- [第三十六期：使用Latex写论文](week36/使用Latex写论文.md)（[视频](https://www.bilibili.com/video/BV1Ev411h7Z5)）-（陶紫玉）
+- [第三十七期：支持向量机（SVM）](week37/支持向量机（SVM）.md)（[视频](https://www.bilibili.com/video/BV1NX4y1G7HJ)）-（李慧敏）
+- [第三十八期：bootstrap](week38/bootstrap.md)（[视频](https://www.bilibili.com/video/BV1sy4y1E7m4)）-（朱堃）
+- [第三十九期：主成分分析(PCA)](week39/主成分分析(PCA).md)（[视频](https://www.bilibili.com/video/BV1oU4y1a75S)）-（吴辰旭）
+- [第四十期：几种常用的差异分析方法简介](week40/几种常用的差异分析方法简介)（[视频](https://www.bilibili.com/video/BV1GK4y1K7Te)）-（宁伟）
+- [第四十一期：t-SNE降维原理及其应用](week41/t-SNE降维原理及其应用.md)（[视频](https://www.bilibili.com/video/BV1FX4y137ST)）-（吴辰旭）
+- [第四十二期：python数据结构与算法](week42/python数据结构与算法.md)（[视频](https://www.bilibili.com/video/BV1Ho4y127R4)）-（王轩）
+- [第四十三期：相关分析](week43/相关分析.md)（[视频](https://www.bilibili.com/video/BV1SQ4y1R75N)）-（宁伟）
+- [第四十四期：R多线程常用方法介绍](week44/R多线程常用方法介绍.md)（[视频](https://www.bilibili.com/video/BV1R54y1V7wZ)）-（朱堃）
+- [第四十六期：Shiny](week45/mastering_shiny.md)（[视频](https://www.bilibili.com/video/BV1NX4y1G7HJ)）-（吴涛）
