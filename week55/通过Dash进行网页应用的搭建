@@ -1,0 +1,277 @@
+# 2021.9.3
+
+# 通过Dash进行网页应用的搭建
+
+*参考内容：* 
+
+[https://github.com/CNFeffery/DataScienceStudyNotes](https://github.com/CNFeffery/DataScienceStudyNotes)
+
+
+目录：
+
+1. 介绍与安装
+
+2. 页面布局
+
+3. 回调交互
+
+4. 部署发布
+
+
+## 介绍与安装
+
+Dash是建立在`Flask`、`Poltly.js`以及`React.js`的基础上的一个库。它可以让对网页建立知识缺乏的同学，可以通过纯代码的方式来建立自己的应用，你不必去详细的了解`css`，`html`，`JavaScript`相关的知识。它可以在`python`，`R`和`Julia`这些平台上使用。
+
+![](https://img2020.cnblogs.com/blog/1344061/202101/1344061-20210110191333418-2111010974.png)
+
+*这里的演示是* 以`python`为主的。
+
+安装
+
+```Bash
+pip install dash
+pip install dash_bootstrap_components #用到dbc框架中的很多的组件
+```
+
+
+这样其实你就可以来创建自己的一个网址了。
+
+比如：
+
+```Bash
+import dash
+import dash_html_components as html
+
+app = dash.Dash(__name__)
+
+app.layout = html.H1('Liulab Workshop')
+
+if __name__ == '__main__':
+    app.run_server()
+```
+
+
+# 页面布局
+
+当我们打开一个网页的时候，我们最开始看到的是它的整体的布局，比如百度。虽然我们不要求自己做的应用有多好看，但是也要有一定的排版，复合一个人类易读的状态。如果想要定制一个好看的网页，需要了解`CSS`和`jS`相关的内容的。
+
+而在这里我们借助刚才下载的`dbc`库，它是来源于`BootStrap`框架，可以非常简单的来对自己的页面进行排版。
+
+```Bash
+import dash_bootstrap_components as dbc
+```
+
+
+首先要了解的是在其页面布局中的三个主要的概念`Container`，`Row`，`Col`：
+
+简单的概括理解来说就是，`Container`作为一个容器，它装有行和列，其中行（`Row`）中包含着列（`Col`），一行被分为12个长度，如果某一行不同的列超过12，则超过的那一列会被移到下一行，某一列中可以嵌套行，来更加细致的划分。
+
+从代码上来看：
+
+```Bash
+import dash
+import dash_bootstrap_components as dbc
+
+app = dash.Dash(__name__,external_stylesheets=['https://cdn.staticfile.org/twitter-bootstrap/4.5.2/css/bootstrap.min.css'])
+
+app.layout = dbc.Container(
+    [
+        dbc.Row(dbc.Col('第一行'),
+                style={
+                    'background-color': 'lightgreen'
+                }),
+        dbc.Row(
+            [
+                dbc.Col('第二行第一列', width=6, style={'background-color': 'lightblue'}),
+                dbc.Col('第二行第二列', width=6, style={'background-color': 'lightskyblue'})
+            ]
+        ),
+        dbc.Row(
+            [
+                dbc.Col('第三行第一列', width=2, style={'background-color': 'HotPink'}),
+                dbc.Col('第三行第二列', width=10, style={'background-color': 'IndianRed'})
+            ]
+        ),
+        dbc.Row(
+            [
+                dbc.Col('第四行第一列', width=2, style={'background-color': 'HotPink'}),
+                dbc.Col('第四行第二列', width=2, style={'background-color': 'IndianRed'}),
+                dbc.Col('第四行第三列', width=2, style={'background-color': 'HotPink'})
+            ]
+        ),
+        dbc.Row(
+            [
+                dbc.Col('第五行第一列', width=2, style={'background-color': 'LightSteelBlue'}),
+                dbc.Col('第五行第二列', width=11, style={'background-color': 'MistyRose'}),
+            ]
+        ),
+        dbc.Row(
+            [
+                dbc.Col('第六行第一列', width=6, style={'background-color': 'lightblue'}),
+                dbc.Col(
+                    dbc.Row(
+                        [
+                            dbc.Col('嵌套1', width=6, style={'background-color': 'Moccasin'}),
+                            dbc.Col('嵌套2', width=3, style={'background-color': 'lightskyblue'}),
+                            dbc.Col('嵌套3', width=3, style={'background-color': 'Moccasin'}),
+                        ]
+                    ),
+                    width=6,
+                    style={'background-color': 'lightskyblue'})
+            ]
+        )
+    ]
+)
+
+if __name__ == "__main__":
+    app.run_server()
+```
+
+
+额外的，在`width`中可以通过已字典的形式传入`offset`参数来使不同的`Col`产生位移，通过`order`参数来指定其顺序，在`Row`中，可以通过指定`justify`参数来指定其中的行的对齐方式。这里就不演示了。可以通过相对应的[文档](https://dash-bootstrap-components.opensource.faculty.ai/docs/components/layout/)看其对应的不同的参数。
+
+## 回调交互
+
+回调交互是其作为应用最重要的部分，因为如果不考虑回调交互的话，那网址其实就是一个页面的展示，类似于博客来展示内容，而不是能用这个网站来做什么东西。
+
+首先是以代码来理解
+
+```Bash
+import dash
+import dash_html_components as html
+import dash_bootstrap_components as dbc
+from dash.dependencies import Input, Output
+
+app = dash.Dash(__name__,external_stylesheets=['https://cdn.staticfile.org/twitter-bootstrap/4.5.2/css/bootstrap.min.css'])
+app.layout = html.Div(
+    [
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        dbc.Container(
+            [
+                dbc.Row(
+                    [
+                        dbc.Col(dbc.Input(id='input-value',
+                                          placeholder='请输入些东西'),
+                                width=12),
+                        dbc.Col(dbc.Label(id='output-value'),
+                                width=12)
+                    ]
+                )
+            ]
+        )
+    ]
+)
+
+# 对应app实例的回调函数装饰器
+@app.callback(
+    Output('output-value', 'children'),
+    Input('input-value', 'value')
+)
+def input_to_output(input_value):
+    '''
+    简单的回调函数
+    '''
+    return input_value
+if __name__ == '__main__':
+    app.run_server()
+```
+
+
+这里需要的组件是`Input`与`Output`，来监控你的输入与输出。而你想实现怎样的功能是需要通过`@app.callback()...def...`这部分决定的，你需要在这里依照ID依次放入输出与输入。他也支持多输入或者说多输出，你只要能够保证你的顺序是正确的就可以了：
+
+```Bash
+import dash
+import dash_html_components as html
+import dash_bootstrap_components as dbc
+from dash.dependencies import Input, Output
+
+app = dash.Dash(
+    __name__,
+    external_stylesheets=['css/bootstrap.min.css']
+)
+
+app.layout = html.Div(
+    [
+        html.Br(),
+        html.Br(),
+        html.Br(),
+        dbc.Container(
+            [
+                dbc.Row(
+                    [
+                        dbc.Col(dbc.Input(id='input-lastname'), width=3),
+                        dbc.Col(html.P('+'), width=1),
+                        dbc.Col(dbc.Input(id='input-firstname'), width=3),
+                    ],
+                    justify='start'
+                ),
+                html.Hr(),
+                dbc.Label(id='output1'),
+                html.Br(),
+                dbc.Label(id='output2')
+            ]
+        )
+    ]
+)
+
+
+@app.callback(
+    [Output('output1', 'children'),
+     Output('output2', 'children')],
+    [Input('input-lastname', 'value'),
+     Input('input-firstname', 'value')]
+)
+def input_to_output(lastname, firstname):
+
+    try:
+        return '完整姓名：' + lastname + firstname, f'姓名长度为{len(lastname+firstname)}'
+    except:
+        return '等待输入...', '等待输入...'
+
+
+if __name__ == '__main__':
+    app.run_server()
+```
+
+
+回调交互这部分我就简单的介绍这些内容，有兴趣的同学可以去看相对的教程与文档。
+
+## 部署与发布
+
+当我们已经写好一个网站之后，别人是无法访问的，我们需要放到能连到到外网的服务器上，别人才能访问。因为这里我没有自己的ip，所以这里我通过Heroku来建立自己的应用。
+
+### heroku
+
+1 创建heroku账户。（这里好像只能使用google邮箱来创建）
+
+2 在heroku页面中创建自己的app名称，他会最为url组成的一部分。
+
+3 下载安装复合自己版本的heroku的CLI，这样的目的是为了能够在终端中登陆自己的账号。
+
+国内要通过：heroku login -i 的方式
+
+4 在pycharm中创建Virtualenv的虚拟环境。
+
+5 创建app文件，需要在app = dash.Dash()后面添加server = app.server
+
+6 安装你所需要的模块。还有很重要的gunicorn包，它是作为构建网页的主要的部分，安装好的包会被放在lib目录下。
+
+7.创建.gitignore文件,添加上git需要忽略的内容。
+
+vebv
+*.pyc
+.env
+.DS_Store
+
+8 创建Prcofile文件，内容格式为 web:gunicorn appname:server
+
+9 pip freeze > requirements.txt 创建所需要的依赖文件
+
+10 下面这部分的操作按照页面提示来做就可以了。
+
+
+
+在理解了上述操作之后，其实也是可以从GitHub上链接过来，而且我觉得这样做的话会更简单一些。
+
