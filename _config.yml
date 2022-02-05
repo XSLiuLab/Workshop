@@ -3,4 +3,6 @@ logo: /assets/img/logo.jpg
 description: 课题组每周研讨会
 show_downloads: true
 google_analytics:
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
