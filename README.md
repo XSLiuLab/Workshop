@@ -58,3 +58,4 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 
 ## 2022
 
+- [第一期：数据库系统的简单介绍](2022/week1/数据库系统的简单介绍.md)（[视频](https://www.bilibili.com/video/)）-（王金禹）
