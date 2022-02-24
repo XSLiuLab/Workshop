@@ -54,7 +54,7 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 - [第四十二期：python数据结构与算法](2021/week42/python数据结构与算法.md)（[视频](https://www.bilibili.com/video/BV1Ho4y127R4)）-（王轩）
 - [第四十三期：相关分析](2021/week43/相关分析.md)（[视频](https://www.bilibili.com/video/BV1SQ4y1R75N)）-（宁伟）
 - [第四十四期：R多线程常用方法介绍](2021/week44/R多线程常用方法介绍.md)（[视频](https://www.bilibili.com/video/BV1R54y1V7wZ)）-（朱堃）
-- [第四十六期：Shiny](2021/week45/mastering_shiny.md)（[视频](https://www.bilibili.com/video/BV1NX4y1G7HJ)）-（吴涛）
+- [第四十六期：Shiny](2021/week46/mastering_shiny.md)（[视频](https://www.bilibili.com/video/BV1NX4y1G7HJ)）-（吴涛）
 
 ## 2022
 
