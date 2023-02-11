@@ -524,7 +524,7 @@ $ singularity build  pop-evol-gwas.sif docker-archive://pop-evol-gwas.tar  #sif 
 主要有以下几个步骤：
 
 * 建立singularuty sandbox（文件夹形式），`singularity build --sandbox centos_pre docker://centos:7.9.2009`​​
-* 通过交互的方式进入容器镜像，进行软件的安装，配置依赖环境，`singularity shell -w molspin`​​，-w等于--writable 可修改
+* 通过交互的方式进入容器镜像，进行软件的安装，配置依赖环境，`singularity shell -w centos_pre`​​，-w等于--writable 可修改
 * 退出sandbox，生成sif文件，`singularity build centos_pre.sif centos_pre/`​​
 
 SIF和sandbox两种格式的镜像是可以相互转换的：1. 将SIF格式的容器转换成sandbox `singularity build --sandbox centos76 centos76.sif`​；2. 将sandbox容器镜像转化成SIF格式 `singularity build centos76.sif centos76/`​
