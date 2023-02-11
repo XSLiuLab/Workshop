@@ -64,5 +64,4 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 
 ## 2023
 
-- [第一期：容器技术 -- Docker & Singularity](2023/week1/容器技术--Docker&Singularity.md) - (刁凯旋)
-- [第三期：maftools](2022/week3/maftools使用方法.md)
+- [第一期：容器技术 -- Docker & Singularity](2023/week1/容器技术%20--%20Docker%20&%20Singularity.md) - (刁凯旋)
