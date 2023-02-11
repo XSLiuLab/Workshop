@@ -12,7 +12,7 @@ lastmod: 2023-02-10T14:35:55Z
 
 容器是一种Linux上广为采用的应用封装技术，它将可执行程序与依赖库打包成一个镜像文件，启动时与宿主节点共享操作系统内核。 由于镜像文件同时携带可执行文件和依赖库，避免了两者不匹配造成的兼容性问题，还能在一个宿主Linux操作系统上支持多种不同的Linux发行版
 
-Docker采用的是**Go语言**编写的，该语言一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言，常用于Web程序开发，并且具有成熟的Web开发框架，如Beego、Gin、Iris等等；Docker具有3个基本的概念：
+Docker采用的是 **Go语言** 编写的，该语言一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言，常用于Web程序开发，并且具有成熟的Web开发框架，如Beego、Gin、Iris等等；Docker具有3个基本的概念：
 
 * **镜像（Image）**：Docker 镜像（Image），就相当于是一个 root 文件系统。比如官方镜像 ubuntu:16.04 就包含了完整的一套 Ubuntu16.04 最小系统的 root 文件系统
 
@@ -206,7 +206,7 @@ $ apt-get update
 $ docker commit -m="has update" -a="diaokx" e218edb10161 diaokx/ubuntu:v2
 ```
 
-其中，**-m:** 提交的描述信息；**-a:** 指定镜像作者；**e218edb10161：**容器 ID；**diaokx/ubuntu:v2:** 指定要创建的目标镜像名
+其中，**-m:** 提交的描述信息；**-a:** 指定镜像作者；**e218edb10161：** 容器 ID；**diaokx/ubuntu:v2:** 指定要创建的目标镜像名
 
 #### Dockerfile构建镜像
 
@@ -388,7 +388,7 @@ $ docker tag 860c279d2fec image_diaokx:v2.0
 
 考虑这样一种情况：假如你本地有一个很大的镜像，你的同事想要该镜像运行，但是该镜像不管是用Dockerfile构建还是`docker pull`​下载，都需要很久，那能不能将你本地所拥有的这个镜像打包发送给同事，导入后运行呢？答案是肯定的，Docker官方已经想到了这种情况，Docker镜像可以导入导出，用于迁移、备份、升级等场景，涉及的命令有`export、import、save、load`​
 
-**注意：**export导出的文件再import回去时，无法保留镜像所有历史（即Dockerfile每一层的layer信息），不能进行回滚操作；而save是依据镜像来的，所以导入时可以完整保留下每一层layer信息。可以通过`docker history`​查看
+**注意：** export导出的文件再import回去时，无法保留镜像所有历史（即Dockerfile每一层的layer信息），不能进行回滚操作；而save是依据镜像来的，所以导入时可以完整保留下每一层layer信息。可以通过`docker history`​查看
 
 ### 镜像的导出导入
 
@@ -428,7 +428,7 @@ $ cat nginx-test.tar | docker import - nginx:imp
 
 ## Singularity简介
 
-Singularity容器技术是为了弥补Docker在高性能计算集群HPC表现不佳而提出的（需要root权限，不够轻量级，性能损失较大），其也是基于Go语言编写。Singularity 强调容器服务的便捷性、可移植性和可扩展性，而弱化了容器进程的*高度隔离性*，因此量级更轻，内核namespace更少，性能损失更小；另外，Singularity 同时支持root用户和非root用户启动，且容器启动前后，**用户上下文保持不变，这使得用户权限在容器内部和外部都是相同的；**然而，Singularity它的知名度远不如 Docker，社区支持较少，在国内也没有镜像源导致*下载镜像速度非常慢甚至失败*
+Singularity容器技术是为了弥补Docker在高性能计算集群HPC表现不佳而提出的（需要root权限，不够轻量级，性能损失较大），其也是基于Go语言编写。Singularity 强调容器服务的便捷性、可移植性和可扩展性，而弱化了容器进程的*高度隔离性*，因此量级更轻，内核namespace更少，性能损失更小；另外，Singularity 同时支持root用户和非root用户启动，且容器启动前后，**用户上下文保持不变，这使得用户权限在容器内部和外部都是相同的；** 然而，Singularity它的知名度远不如 Docker，社区支持较少，在国内也没有镜像源导致*下载镜像速度非常慢甚至失败*
 
 Singularity的重要概念：1. **SIF（Singularity Image File）**：压缩后的只读*（read-only）*的Singularity镜像文件，是**生产**使用的主要形式；2. **Sandbox**：可写(writable)的容器存在形式，是文件系统中的一个目录，常用于开发或者创建自己的容器，是**开发**使用的主要形式
 
@@ -531,9 +531,9 @@ SIF和sandbox两种格式的镜像是可以相互转换的：1. 将SIF格式的�
 
 ## 常用的Singularity命令
 
-在执行命令之前，我们最好重新设置临时文件夹，防止默认临时文件夹**/tmp**爆满而导致运行失败：`export SINGULARITY_TMPDIR=/home/user/tmp`​、`export TMPDIR=/home/user/tmp`​
+在执行命令之前，我们最好重新设置临时文件夹，防止默认临时文件夹 **/tmp** 爆满而导致运行失败：`export SINGULARITY_TMPDIR=/home/user/tmp`​、`export TMPDIR=/home/user/tmp`​
 
-以下为常用的示例命令，可加**-B**参数， 表示挂载，多个挂载用逗号隔开：
+以下为常用的示例命令，可加 **-B** 参数， 表示挂载，多个挂载用逗号隔开：
 
 * 执行一个命令并退出，`singularity exec ubuntu.sif bash -c  "pwd && id"`​​
 * 运行一个镜像，`singularity run ubuntu.sif`​
