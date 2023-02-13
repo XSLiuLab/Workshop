@@ -61,6 +61,8 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 - [第一期：数据库系统的简单介绍](2022/week1/数据库系统的简单介绍.md)（[视频](https://www.bilibili.com/video/BV1qR4y157xu)）-（王金禹）
 - [第二期：测序原理介绍](2022/week2/测序技术的发展.md)（[视频](https://www.bilibili.com/video/BV12P4y1c7QC)）- （陈静）
 - [第三期：maftools](2022/week3/maftools使用方法.md)（[视频](https://www.bilibili.com/video/BV12P4y1c7QC)）- （王光帅）
+- [第四期：Python包的封装及发布](2022/week4/Python包的封装及发布.md) -（刁凯旋）
+- [第五期：模型调参](2022/week5/模型调参.md) -（刁凯旋）
 
 ## 2023
 
