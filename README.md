@@ -71,4 +71,4 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 ## 2024
 
 - [week5: GAN的介绍](2024/week5/GAN.ipynb) - (陈雯)
-- [week7: BiET的介绍](2024/week720240410_BEiT.ipynb) - (王南)
+- [week7: BiET的介绍](2024/week7/20240410_BEiT.ipynb) - (王南)
