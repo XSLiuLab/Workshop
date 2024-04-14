@@ -67,3 +67,8 @@ GitHub 在线阅读网址：<https://xsliulab.github.io/Workshop/>
 ## 2023
 
 - [第一期：容器技术 -- Docker & Singularity](2023/week1/容器技术%20--%20Docker%20&%20Singularity.md) - (刁凯旋)
+
+## 2024
+
+- [week5: GAN的介绍](2024/week5/GAN.ipynb) - (陈雯)
+- [week7: BiET的介绍](2024/week720240410_BEiT.ipynb) - (王南)
